@@ -1,0 +1,2 @@
+# kink-eslint
+ESLint standards.
