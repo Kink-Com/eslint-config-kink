@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-kink",
+  "version": "1.0.0",
+  "description": "Kink.com ESLint standards.",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "eslint-plugin-jsdoc": ">= 2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kink-Com/eslint-config-kink.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Jon Peck <jonpeck@kink.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kink-Com/eslint-config-kink/issues"
+  },
+  "homepage": "https://github.com/Kink-Com/eslint-config-kink#readme",
+  "engine": 6
+}
