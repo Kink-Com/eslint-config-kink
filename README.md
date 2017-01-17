@@ -1,4 +1,4 @@
-# kink-eslint
+# eslint-config-kink
 
 Kink.com [ESLint](http://eslint.org/) standards.
 
@@ -49,6 +49,6 @@ Run the script:
 npm run eslint --silent
 ```
 
-## Development
+## Maintaining these standards
 
 http://eslint.org/docs/developer-guide/shareable-configs
