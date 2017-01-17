@@ -11,14 +11,10 @@ npm uninstall eslint -g
 rm ~/.eslintrc
 ```
 
-Add the following to the project's `package.json`:
+Add new `devDependencies` to your project:
 
-```json
-"devDependencies": {
-  "eslint": "^3.13.1",
-  "eslint-plugin-jsdoc": "^2.4.0",
-  "eslint-config-kink": "github:kink-com/eslint-config-kink"
-}
+```bash
+npm i eslint eslint-plugin-jsdoc kink-com/eslint-config-kink -D
 ```
 
 In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc.json` with the following contents:
@@ -27,12 +23,6 @@ In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc
 {
   "extends": "kink"
 }
-```
-
-Install:
-
-```bash
-npm install
 ```
 
 ## Use
