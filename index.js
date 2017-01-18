@@ -118,6 +118,8 @@ module.exports = {
 		'no-bitwise': 'error',
 		// http://eslint.org/docs/rules/no-caller
 		'no-caller': 'error',
+		// http://eslint.org/docs/rules/no-const-assign.html
+		'no-const-assign': 'error',
 		// http://eslint.org/docs/rules/no-dupe-args
 		'no-dupe-args': 'error',
 		// http://eslint.org/docs/rules/no-dupe-keys
