@@ -14,7 +14,7 @@ rm ~/.eslintrc
 Add new `devDependencies` to your project:
 
 ```bash
-npm i eslint eslint-plugin-jsdoc git+ssh://git@github.com/Kink-Com/eslint-config-kink -D
+npm i eslint eslint-plugin-jsdoc eslint-plugin-security git+ssh://git@github.com/Kink-Com/eslint-config-kink -D
 ```
 
 In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc.json` with the following contents:

@@ -2,7 +2,8 @@
 
 module.exports = {
 	plugins: [
-		'jsdoc'
+		'jsdoc',
+		'security'
 	],
 	env: {
 		browser: true,
@@ -192,6 +193,32 @@ module.exports = {
 			'warn',
 			'single'
 		],
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-unsafe-regex
+		'security/detect-unsafe-regex': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-regexp
+		'security/detect-non-literal-regexp': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-require
+		'security/detect-non-literal-require': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-fs-filename
+		'security/detect-non-literal-fs-filename': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-eval-with-expression
+		'security/detect-eval-with-expression': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-pseudoRandomBytes
+		'security/detect-pseudoRandomBytes': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-possible-timing-attacks
+		'security/detect-possible-timing-attacks': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-no-csrf-before-method-override
+		'security/detect-no-csrf-before-method-override': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-buffer-noassert
+		'security/detect-buffer-noassert': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-child-process
+		'security/detect-child-process': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-disable-mustache-escape
+		'security/detect-disable-mustache-escape': 1,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-object-injection
+		'security/detect-object-injection': 0,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-new-buffer
+		'security/detect-new-buffer': 1,
 		// http://eslint.org/docs/rules/semi
 		semi: [
 			'error',

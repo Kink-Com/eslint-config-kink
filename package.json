@@ -1,11 +1,12 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kink.com ESLint standards.",
   "main": "index.js",
   "peerDependencies": {
     "eslint": ">= 3",
-    "eslint-plugin-jsdoc": ">= 2.4.0"
+    "eslint-plugin-jsdoc": ">= 2.4.0",
+    "eslint-plugin-security": ">= 1.3.0"
   },
   "repository": {
     "type": "git",
