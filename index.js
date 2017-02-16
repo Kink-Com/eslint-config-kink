@@ -6,9 +6,9 @@ module.exports = {
 		'security'
 	],
 	env: {
-		browser: true,
+		browser: false,
 		es6: true,
-		jquery: true,
+		jquery: false,
 		mocha: true,
 		mongo: true,
 		node: true
@@ -168,7 +168,9 @@ module.exports = {
 			'never'
 		],
 		// http://eslint.org/docs/rules/prefer-const
-		'prefer-const': 'error',
+		// If a variable is never reassigned, using the const declaration is better.
+		// TODO: Turned off for now; revisit.
+		'prefer-const': 'off',
 		// http://eslint.org/docs/rules/prefer-template
 		'prefer-template': 'error',
 		// http://eslint.org/docs/rules/quote-props

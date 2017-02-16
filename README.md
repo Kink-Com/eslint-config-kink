@@ -25,6 +25,14 @@ In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc
 }
 ```
 
+For frontend projects:
+
+```javascript
+{
+  "extends": "kink/web"
+}
+```
+
 ## Use
 
 Optimally, you should configure your editor to automatically lint all files.
