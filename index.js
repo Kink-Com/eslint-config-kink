@@ -34,6 +34,14 @@ module.exports = {
 			'error',
 			'never'
 		],
+		// http://eslint.org/docs/rules/comma-spacing
+		'comma-spacing': [
+			'error',
+			{
+				'before': false,
+				'after': true
+			}
+		],
 		// http://eslint.org/docs/rules/comma-style
 		'comma-style': [
 			'error',
@@ -230,6 +238,10 @@ module.exports = {
 		'spaced-comment': [
 			'error',
 			'always'
+		],
+		// http://eslint.org/docs/rules/space-infix-ops
+		'space-infix-ops': [
+			'error'
 		],
 		// http://eslint.org/docs/rules/space-before-function-paren
 		'space-before-function-paren': [
