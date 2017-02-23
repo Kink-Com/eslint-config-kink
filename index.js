@@ -18,11 +18,13 @@ module.exports = {
 	},
 	rules: {
 		// http://eslint.org/docs/rules/brace-style
+		// https://github.com/airbnb/javascript#blocks--cuddled-elses
 		'brace-style': [
 			'error',
 			'1tbs'
 		],
 		// http://eslint.org/docs/rules/camelcase
+		// https://github.com/airbnb/javascript#naming--camelCase
 		camelcase: [
 			'error',
 			{
@@ -43,6 +45,7 @@ module.exports = {
 			}
 		],
 		// http://eslint.org/docs/rules/comma-style
+		// https://github.com/airbnb/javascript#commas--leading-trailing
 		'comma-style': [
 			'error',
 			'last'
@@ -61,6 +64,7 @@ module.exports = {
 			}
 		],
 		// http://eslint.org/docs/rules/eqeqeq
+		// https://github.com/airbnb/javascript#comparison--eqeqeq
 		eqeqeq: [
 			'error',
 			'always'
@@ -150,8 +154,10 @@ module.exports = {
 			}
 		],
 		// http://eslint.org/docs/rules/no-var
+		// https://github.com/airbnb/javascript#references--disallow-var
 		'no-var': 'error',
 		// http://eslint.org/docs/rules/no-undef
+		// https://github.com/airbnb/javascript#variables--const
 		'no-undef': 'error',
 		// http://eslint.org/docs/rules/no-undef-init
 		'no-undef-init': 'error',
@@ -169,13 +175,16 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-void
 		'no-void': 'error',
 		// http://eslint.org/docs/rules/object-shorthand
+		// https://github.com/airbnb/javascript#es6-object-shorthand
 		'object-shorthand': 'error',
 		// http://eslint.org/docs/rules/one-var
+		// https://github.com/airbnb/javascript#variables--one-const
 		'one-var': [
 			'error',
 			'never'
 		],
 		// http://eslint.org/docs/rules/prefer-const
+		// https://github.com/airbnb/javascript#variables--const
 		// If a variable is never reassigned, using the const declaration is better.
 		// TODO: Turned off for now; revisit.
 		'prefer-const': 'off',
