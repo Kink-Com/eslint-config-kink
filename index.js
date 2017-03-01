@@ -254,10 +254,12 @@ module.exports = {
 		'space-infix-ops': [
 			'error'
 		],
+		// http://eslint.org/docs/rules/space-before-blocks
+		'space-before-blocks': 'error',
 		// http://eslint.org/docs/rules/space-before-function-paren
 		'space-before-function-paren': [
 			'error',
-			'never'
+			'always'
 		],
 		// http://eslint.org/docs/rules/strict
 		strict: [
