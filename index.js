@@ -97,17 +97,6 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-hyphen-before-param-description
 		// Disabling due to institutional history / preference.
 		'jsdoc/require-hyphen-before-param-description': 0,
-		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param
-		'jsdoc/require-param': 1,
-		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-description
-		'jsdoc/require-param-description': 1,
-		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-type
-		'jsdoc/require-param-type': 1,
-		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-description
-		'jsdoc/require-returns-description': 1,
-		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-type
-		// Disabling due to institutional history / preference.
-		'jsdoc/require-returns-type': 0,
 		// eslint.org/docs/rules/key-spacing
 		'key-spacing': [
 			'error',
@@ -277,8 +266,22 @@ module.exports = {
 		'valid-jsdoc': [
 			'error',
 			{
-				requireReturn: false
+				requireParamDescription: true,
+				requireReturnDescription: true,
+				requireReturn: false,
+				requireReturnType: true,
+				// Institutional history / preference.
+				prefer: {
+					return: 'return'
+				}
 			}
 		]
+	},
+	settings: {
+		jsdoc: {
+			'tagNamePreference': {
+				'returns': 'return'
+			}
+		}
 	}
 };
