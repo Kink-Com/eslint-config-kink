@@ -95,7 +95,8 @@ module.exports = {
 		// Turning off for now, there's a large amount of the codebase that does not adhere to this standard.
 		'jsdoc/require-description-complete-sentence': 0,
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-hyphen-before-param-description
-		'jsdoc/require-hyphen-before-param-description': 1,
+		// Disabling due to institutional history / preference.
+		'jsdoc/require-hyphen-before-param-description': 0,
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param
 		'jsdoc/require-param': 1,
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-description
@@ -105,7 +106,8 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-description
 		'jsdoc/require-returns-description': 1,
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-type
-		'jsdoc/require-returns-type': 1,
+		// Disabling due to institutional history / preference.
+		'jsdoc/require-returns-type': 0,
 		// eslint.org/docs/rules/key-spacing
 		'key-spacing': [
 			'error',
@@ -204,7 +206,7 @@ module.exports = {
 				require: {
 					FunctionDeclaration: true,
 					MethodDefinition: true,
-					ClassDeclaration: true,
+					ClassDeclaration: false,
 					ArrowFunctionExpression: false
 				}
 			}
