@@ -250,7 +250,11 @@ module.exports = {
 		// http://eslint.org/docs/rules/space-before-function-paren
 		'space-before-function-paren': [
 			'error',
-			'always'
+			{
+				'anonymous': 'always',
+				'named': 'never',
+				'asyncArrow': 'ignore'
+			}
 		],
 		// http://eslint.org/docs/rules/strict
 		strict: [
