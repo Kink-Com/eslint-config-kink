@@ -25,7 +25,7 @@ In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc
 }
 ```
 
-For frontend projects:
+For frontend projects, add a second file `./public/.eslintrc.json` with the following:
 
 ```javascript
 {
