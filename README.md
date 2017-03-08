@@ -17,6 +17,8 @@ Add new `devDependencies` to your project:
 npm i eslint eslint-plugin-jsdoc eslint-plugin-security git+ssh://git@github.com/Kink-Com/eslint-config-kink -D
 ```
 
+### Backend
+
 In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc.json` with the following contents:
 
 ```javascript
@@ -25,7 +27,9 @@ In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc
 }
 ```
 
-For frontend projects, add a second file `./public/.eslintrc.json` with the following:
+### Frontend
+
+For frontend projects, also add `./public/.eslintrc.json` with the following:
 
 ```javascript
 {
@@ -33,9 +37,27 @@ For frontend projects, add a second file `./public/.eslintrc.json` with the foll
 }
 ```
 
+### Protractor E2E
+
+For end-to-end testing with Protactor, two steps are required:
+
+```bash
+npm install --save-dev eslint-plugin-protractor
+```
+
+Create `./test/e2e/.eslintrc.json`:
+
+```javascript
+{
+  "extends": "kink/e2e"
+}
+```
+
 ## Use
 
 Optimally, you should configure your editor to automatically lint all files.
+
+See http://eslint.org/docs/user-guide/integrations to determine how to best configure your editor.
 
 To execute ESLint directly:
 

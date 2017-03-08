@@ -1,6 +1,9 @@
 'use strict';
 
 module.exports = {
+	extends: [
+		'kink'
+	],
 	env: {
 		browser: true,
 		es6: false,
