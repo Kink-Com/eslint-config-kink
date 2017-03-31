@@ -282,7 +282,7 @@ module.exports = {
 		],
 		// http://eslint.org/docs/rules/id-length
 		'id-length': [
-			'error',
+			'warn',
 			{
 				exceptions: ['e', 'i', 'j', '_', '$']
 			}
