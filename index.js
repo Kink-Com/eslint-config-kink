@@ -279,6 +279,13 @@ module.exports = {
 					return: 'return'
 				}
 			}
+		],
+		// http://eslint.org/docs/rules/id-length
+		'id-length': [
+			'error',
+			{
+				exceptions: ['e', 'i', 'j', '_', '$']
+			}
 		]
 	},
 	settings: {
