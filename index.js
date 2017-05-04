@@ -132,6 +132,8 @@ module.exports = {
 		'no-dupe-keys': 'error',
 		// http://eslint.org/docs/rules/no-duplicate-case
 		'no-duplicate-case': 'error',
+		// http://eslint.org/docs/rules/no-else-return
+		'no-else-return': 'error',
 		// http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
 		'no-mixed-spaces-and-tabs': [
 			'error',
