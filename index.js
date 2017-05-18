@@ -169,6 +169,9 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-else-return
 		'no-else-return': 'error',
 
+		// http://eslint.org/docs/rules/no-empty-pattern
+		'no-empty-pattern': 'error',
+
 		// http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
 		'no-mixed-spaces-and-tabs': [
 			'error',
@@ -186,6 +189,14 @@ module.exports = {
 			}
 		],
 
+		// http://eslint.org/docs/rules/no-self-assign
+		'no-self-assign': [
+			'error',
+			{
+				props: true
+			}
+		],
+
 		// http://eslint.org/docs/rules/no-var
 		// https://github.com/airbnb/javascript#references--disallow-var
 		'no-var': 'error',
@@ -199,6 +210,9 @@ module.exports = {
 
 		// http://eslint.org/docs/rules/no-unreachable
 		'no-unreachable': 'error',
+
+		// http://eslint.org/docs/rules/no-useless-return
+		'no-useless-return': 'error',
 
 		// http://eslint.org/docs/rules/no-unused-vars
 		'no-unused-vars': [
