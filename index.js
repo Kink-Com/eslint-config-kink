@@ -3,6 +3,7 @@
 module.exports = {
 	plugins: [
 		'jsdoc',
+		'promise',
 		'security'
 	],
 	env: {
@@ -244,8 +245,23 @@ module.exports = {
 		// TODO: Turned off for now; revisit.
 		'prefer-const': 'off',
 
+		// http://eslint.org/docs/rules/prefer-promise-reject-errors
+		'prefer-promise-reject-errors': 'error',
+
 		// http://eslint.org/docs/rules/prefer-template
 		'prefer-template': 'error',
+
+		// https://www.npmjs.com/package/eslint-plugin-promise#rule-always-return
+		'promise/always-return': 'error',
+
+		// https://www.npmjs.com/package/eslint-plugin-promise#rule-catch-or-return
+		'promise/catch-or-return': 'error',
+
+		// https://www.npmjs.com/package/eslint-plugin-promise#rule-no-return-wrap
+		'promise/no-return-wrap': 'error',
+
+		// https://www.npmjs.com/package/eslint-plugin-promise#param-names
+		'promise/param-names': 'error',
 
 		// http://eslint.org/docs/rules/quote-props
 		'quote-props': [

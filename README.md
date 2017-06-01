@@ -14,7 +14,7 @@ rm ~/.eslintrc
 Add new `devDependencies` to your project:
 
 ```bash
-npm i eslint eslint-plugin-jsdoc eslint-plugin-security git+ssh://git@github.com/Kink-Com/eslint-config-kink -D
+yarn add eslint eslint-plugin-jsdoc eslint-plugin-promise eslint-plugin-security git+ssh://git@github.com/Kink-Com/eslint-config-kink -D
 ```
 
 ### Backend
