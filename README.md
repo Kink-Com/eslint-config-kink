@@ -79,6 +79,24 @@ Run the script:
 npm run eslint --silent
 ```
 
+## Upgrading
+
+Occasionally, new dependencies will be added and it will be necessary to upgrade the local packages. 
+
+Due to the use of `peerDependencies`, this unfortunately is not automatic and you'll get some jarring error messages, like:
+
+```
+warning "eslint-config-kink@1.0.14" has incorrect peer dependency "eslint-plugin-jsdoc@>= 3.1.0".
+warning "eslint-config-kink@1.0.14" has unmet peer dependency "eslint-plugin-promise@>= 3.5.0".
+```
+
+To fix this, use `yarn upgrade` on any missing / outdated package:
+
+```
+yarn upgrade eslint-plugin-jsdoc
+yarn upgrade eslint-plugin-promise
+```
+
 ## Maintaining these standards
 
 http://eslint.org/docs/developer-guide/shareable-configs
