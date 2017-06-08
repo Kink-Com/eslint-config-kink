@@ -252,10 +252,12 @@ module.exports = {
 		'prefer-template': 'error',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-always-return
-		'promise/always-return': 'error',
+		// Best practice, but pedantic and doesn't seem to be preventing bugs.
+		'promise/always-return': 'off',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-catch-or-return
-		'promise/catch-or-return': 'error',
+		// Best practice, but pedantic and doesn't seem to be preventing bugs.
+		'promise/catch-or-return': 'off',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-no-return-wrap
 		'promise/no-return-wrap': 'error',
