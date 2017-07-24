@@ -221,7 +221,8 @@ module.exports = {
 			{
 				args: 'after-used',
 				caughtErrors: 'all',
-				vars: 'all'
+				vars: 'all',
+				varsIgnorePattern: "should|expect"
 			}
 		],
 
