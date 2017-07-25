@@ -76,7 +76,7 @@ As an alternative, you can add a script to your package.json:
 Run the script:
 
 ```bash
-npm run eslint --silent
+npm run -s eslint
 ```
 
 ## Upgrading
@@ -90,11 +90,11 @@ warning "eslint-config-kink@1.0.14" has incorrect peer dependency "eslint-plugin
 warning "eslint-config-kink@1.0.14" has unmet peer dependency "eslint-plugin-promise@>= 3.5.0".
 ```
 
-To fix this, use `yarn upgrade` on any missing / outdated package:
+To fix this, use `npm upgrade` on any missing / outdated package:
 
 ```
-yarn upgrade eslint-plugin-jsdoc
-yarn upgrade eslint-plugin-promise
+npm upgrade eslint-plugin-jsdoc
+npm upgrade eslint-plugin-promise
 ```
 
 ## Maintaining these standards
