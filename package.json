@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Kink.com ESLint standards.",
   "main": "index.js",
   "peerDependencies": {
@@ -24,8 +24,8 @@
       "email": "jonpeck@kink.com"
     },
     {
-      "name": "Bryan Venerable",
-      "email": "bryanvenerable@kink.com"
+      "name": "Bob Beban",
+      "email": "bobbeban@kink.com"
     }
   ],
   "license": "ISC",
