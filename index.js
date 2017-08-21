@@ -44,8 +44,8 @@ module.exports = {
 		'comma-spacing': [
 			'error',
 			{
-				'before': false,
-				'after': true
+				before: false,
+				after: true
 			}
 		],
 
@@ -155,6 +155,9 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-caller
 		'no-caller': 'error',
 
+		// http://eslint.org/docs/rules/no-compare-neg-zero.html
+		'no-compare-neg-zero': 'error',
+
 		// http://eslint.org/docs/rules/no-const-assign.html
 		'no-const-assign': 'error',
 
@@ -172,6 +175,9 @@ module.exports = {
 
 		// http://eslint.org/docs/rules/no-empty-pattern
 		'no-empty-pattern': 'error',
+
+		// https://eslint.org/docs/rules/no-extra-semi
+		'no-extra-semi': 'error',
 
 		// http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
 		'no-mixed-spaces-and-tabs': [
@@ -212,6 +218,9 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-unreachable
 		'no-unreachable': 'error',
 
+		// http://eslint.org/docs/rules/no-useless-escape
+		'no-useless-escape': 'error',
+
 		// http://eslint.org/docs/rules/no-useless-return
 		'no-useless-return': 'error',
 
@@ -222,7 +231,7 @@ module.exports = {
 				args: 'after-used',
 				caughtErrors: 'all',
 				vars: 'all',
-				varsIgnorePattern: "should|expect"
+				varsIgnorePattern: 'should|expect'
 			}
 		],
 
@@ -238,6 +247,13 @@ module.exports = {
 		'one-var': [
 			'error',
 			'never'
+		],
+
+		// https://eslint.org/docs/rules/padding-line-between-statements
+		'padding-line-between-statements': [
+			'Error',
+			{ blankLine: 'always', prev: 'directive', next: '*' },
+			{ blankLine: 'never', prev: 'directive', next: 'directive' }
 		],
 
 		// http://eslint.org/docs/rules/prefer-const
@@ -291,30 +307,6 @@ module.exports = {
 			'single'
 		],
 
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-unsafe-regex
-		'security/detect-unsafe-regex': 1,
-
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-regexp
-		'security/detect-non-literal-regexp': 1,
-
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-require
-		'security/detect-non-literal-require': 1,
-
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-fs-filename
-		'security/detect-non-literal-fs-filename': 1,
-
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-eval-with-expression
-		'security/detect-eval-with-expression': 1,
-
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-pseudoRandomBytes
-		'security/detect-pseudoRandomBytes': 1,
-
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-possible-timing-attacks
-		'security/detect-possible-timing-attacks': 1,
-
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-no-csrf-before-method-override
-		'security/detect-no-csrf-before-method-override': 1,
-
 		// https://github.com/nodesecurity/eslint-plugin-security#detect-buffer-noassert
 		'security/detect-buffer-noassert': 1,
 
@@ -324,17 +316,44 @@ module.exports = {
 		// https://github.com/nodesecurity/eslint-plugin-security#detect-disable-mustache-escape
 		'security/detect-disable-mustache-escape': 1,
 
-		// https://github.com/nodesecurity/eslint-plugin-security#detect-object-injection
-		'security/detect-object-injection': 0,
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-eval-with-expression
+		'security/detect-eval-with-expression': 1,
 
 		// https://github.com/nodesecurity/eslint-plugin-security#detect-new-buffer
 		'security/detect-new-buffer': 1,
+
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-no-csrf-before-method-override
+		'security/detect-no-csrf-before-method-override': 1,
+
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-fs-filename
+		'security/detect-non-literal-fs-filename': 1,
+
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-regexp
+		'security/detect-non-literal-regexp': 1,
+
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-non-literal-require
+		'security/detect-non-literal-require': 1,
+
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-object-injection
+		'security/detect-object-injection': 0,
+
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-possible-timing-attacks
+		'security/detect-possible-timing-attacks': 1,
+
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-pseudoRandomBytes
+		'security/detect-pseudoRandomBytes': 1,
+
+		// https://github.com/nodesecurity/eslint-plugin-security#detect-unsafe-regex
+		'security/detect-unsafe-regex': 1,
 
 		// http://eslint.org/docs/rules/semi
 		semi: [
 			'error',
 			'always'
 		],
+
+		// https://eslint.org/docs/rules/semi-spacing
+		'semi-spacing': 'error',
 
 		// http://eslint.org/docs/rules/spaced-comment
 		'spaced-comment': [
@@ -354,9 +373,9 @@ module.exports = {
 		'space-before-function-paren': [
 			'error',
 			{
-				'anonymous': 'always',
-				'named': 'never',
-				'asyncArrow': 'ignore'
+				anonymous: 'always',
+				named: 'never',
+				asyncArrow: 'ignore'
 			}
 		],
 
@@ -385,12 +404,12 @@ module.exports = {
 					return: 'return'
 				}
 			}
-		],
+		]
 	},
 	settings: {
 		jsdoc: {
-			'tagNamePreference': {
-				'returns': 'return'
+			tagNamePreference: {
+				returns: 'return'
 			}
 		}
 	}
