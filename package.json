@@ -1,11 +1,18 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.0.17",
-  "description": "Kink.com ESLint standards.",
+  "version": "1.1.0",
+  "description": "Kink.com ESLint standards",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "4.x.x",
+    "eslint-plugin-jsdoc": "3.x.x",
+    "eslint-plugin-promise": "3.x.x",
+    "eslint-plugin-security": "1.x.x"
+  },
   "peerDependencies": {
-    "eslint": ">= 3.19.0",
-    "eslint-plugin-jsdoc": ">= 3.1.1",
+    "eslint": ">= 4.5.0",
+    "eslint-plugin-jsdoc": ">= 3.1.2",
     "eslint-plugin-promise": ">= 3.5.0",
     "eslint-plugin-security": ">= 1.4.0"
   },
@@ -33,5 +40,7 @@
     "url": "https://github.com/Kink-Com/eslint-config-kink/issues"
   },
   "homepage": "https://github.com/Kink-Com/eslint-config-kink#readme",
-  "engine": 6
+  "engines": {
+    "node": ">=6"
+  }
 }
