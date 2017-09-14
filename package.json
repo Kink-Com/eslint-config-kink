@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {},
@@ -9,12 +9,6 @@
     "eslint-plugin-jsdoc": "3.x.x",
     "eslint-plugin-promise": "3.x.x",
     "eslint-plugin-security": "1.x.x"
-  },
-  "peerDependencies": {
-    "eslint": ">= 4.5.0",
-    "eslint-plugin-jsdoc": ">= 3.1.2",
-    "eslint-plugin-promise": ">= 3.5.0",
-    "eslint-plugin-security": ">= 1.4.0"
   },
   "repository": {
     "type": "git",

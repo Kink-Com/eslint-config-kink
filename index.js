@@ -277,7 +277,8 @@ module.exports = {
 		'promise/catch-or-return': 'off',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-no-return-wrap
-		'promise/no-return-wrap': 'error',
+		// TODO: Turned off because of false positives; revisit.
+		'promise/no-return-wrap': 'off',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#param-names
 		'promise/param-names': 'error',
