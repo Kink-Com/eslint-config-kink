@@ -1,10 +1,9 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "eslint": "4.x.x",
     "eslint-plugin-jsdoc": "3.x.x",
     "eslint-plugin-promise": "3.x.x",
