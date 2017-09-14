@@ -14,7 +14,7 @@ rm ~/.eslintrc
 Add new `devDependencies` to your project:
 
 ```bash
-npm install eslint eslint-plugin-jsdoc eslint-plugin-promise eslint-plugin-security git+ssh://git@github.com/Kink-Com/eslint-config-kink -D
+npm install git+ssh://git@github.com/Kink-Com/eslint-config-kink -D
 ```
 
 ### Backend
@@ -77,24 +77,6 @@ Run the script:
 
 ```bash
 npm run -s eslint
-```
-
-## Upgrading
-
-Occasionally, new dependencies will be added and it will be necessary to upgrade the local packages. 
-
-Due to the use of `peerDependencies`, this unfortunately is not automatic and you'll get some jarring error messages, like:
-
-```
-warning "eslint-config-kink@1.0.14" has incorrect peer dependency "eslint-plugin-jsdoc@>= 3.1.0".
-warning "eslint-config-kink@1.0.14" has unmet peer dependency "eslint-plugin-promise@>= 3.5.0".
-```
-
-To fix this, use `npm upgrade` on any missing / outdated package:
-
-```
-npm upgrade eslint-plugin-jsdoc
-npm upgrade eslint-plugin-promise
 ```
 
 ## Maintaining these standards
