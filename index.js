@@ -1,8 +1,13 @@
 'use strict';
 
 module.exports = {
+	extends: [
+		'plugin:node/recommended'
+	],
 	plugins: [
 		'jsdoc',
+		'mocha',
+		'node',
 		'promise',
 		'security'
 	],
@@ -146,6 +151,24 @@ module.exports = {
 			}
 		],
 
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/handle-done-callback.md
+		'mocha/handle-done-callback': 'error',
+
+	    // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-return-and-callback.md
+		'mocha/no-return-and-callback': 'error',
+
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-sibling-hooks.md
+		'mocha/no-sibling-hooks': 'error',
+
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-synchronous-tests.md
+		'mocha/no-synchronous-tests': 'error',
+
+		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md
+		'node/exports-style': ['error', 'module.exports'],
+
+		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
+		'node/no-unpublished-require': 'off',
+
 		// http://eslint.org/docs/rules/no-alert
 		'no-alert': 'error',
 
@@ -269,16 +292,13 @@ module.exports = {
 		'prefer-template': 'error',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-always-return
-		// Best practice, but pedantic and doesn't seem to be preventing bugs.
-		'promise/always-return': 'off',
+		'promise/always-return': 'warn',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-catch-or-return
-		// Best practice, but pedantic and doesn't seem to be preventing bugs.
-		'promise/catch-or-return': 'off',
+		'promise/catch-or-return': 'warn',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-no-return-wrap
-		// TODO: Turned off because of false positives; revisit.
-		'promise/no-return-wrap': 'off',
+		'promise/no-return-wrap': 'warn',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#param-names
 		'promise/param-names': 'error',
