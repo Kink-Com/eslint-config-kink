@@ -295,7 +295,12 @@ module.exports = {
 		'promise/always-return': 'warn',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-catch-or-return
-		'promise/catch-or-return': 'warn',
+		'promise/catch-or-return': [
+			'warn',
+			{
+				terminationMethod: ['catch', 'done']
+			}
+		],
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-no-return-wrap
 		'promise/no-return-wrap': 'warn',
