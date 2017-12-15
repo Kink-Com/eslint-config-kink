@@ -10,5 +10,14 @@ module.exports = {
 		mocha: true,
 		mongo: false,
 		node: false
+	},
+	rules: {
+	// Whitelisting done for 'alternative promise chains'.
+		'promise/catch-or-return': [
+			'warn',
+			{
+				terminationMethod: ['catch', 'done']
+			}
+		]
 	}
 };
