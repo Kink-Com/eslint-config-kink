@@ -14,8 +14,9 @@ module.exports = {
 	rules: {
 
 		// https://eslint.org/docs/rules/id-blacklist
+		// Added as a step to avoid scripts triggering ad-blockers.
 		'id-blacklist': [
-			2,
+			2, // This indicates severity, NOT a blacklisted value.
 			'ad',
 			'ads',
 			'banner',
