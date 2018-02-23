@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {
@@ -28,6 +28,10 @@
     {
       "name": "Bob Beban",
       "email": "bobbeban@kink.com"
+    },
+    {
+      "name": "Tess Lins",
+      "email": "tessbakke@kink.com"
     }
   ],
   "license": "ISC",
