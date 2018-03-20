@@ -2,8 +2,9 @@
 
 ## v1.4.0 - 2018.03.20
 
-- Added `./unusedRules.js`
+- Updated `eslint-plugin-node`
 - Added https://www.npmjs.com/package/eslint-plugin-dependencies
+- Added `./unusedRules.js`
 
 ## v1.3.2 - 2018.02.23
 
