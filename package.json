@@ -16,7 +16,7 @@
     "chalk": "2.x",
     "eslint-find-rules": "3.x",
     "lodash": "4.x",
-    "minimist": "^1.2.0",
+    "minimist": "1.x",
     "table": "4.x"
   },
   "repository": {
