@@ -37,22 +37,6 @@ For frontend projects, also add `./public/.eslintrc.json` with the following:
 }
 ```
 
-### Protractor E2E
-
-For end-to-end testing with Protactor, two steps are required:
-
-```bash
-npm install --save-dev eslint-plugin-protractor
-```
-
-Create `./test/e2e/.eslintrc.json`:
-
-```javascript
-{
-  "extends": "kink/e2e"
-}
-```
-
 ## Use
 
 Optimally, you should configure your editor to automatically lint all files.
@@ -65,20 +49,12 @@ To execute ESLint directly:
 ./node_modules/.bin/eslint .
 ```
 
-As an alternative, you can add a script to your package.json:
+## Development
 
-```json
-"scripts": {
-  "eslint": "eslint ."
-}
-```
-
-Run the script:
+To see unused rules:
 
 ```bash
-npm run -s eslint
+node ./debugRules.js
 ```
 
-## Maintaining these standards
-
-http://eslint.org/docs/developer-guide/shareable-configs
+For more details about maintaining these standards, see http://eslint.org/docs/developer-guide/shareable-configs

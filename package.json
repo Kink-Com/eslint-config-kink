@@ -1,15 +1,22 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {
     "eslint": "4.x",
+    "eslint-plugin-dependencies": "2.x",
     "eslint-plugin-jsdoc": "3.x",
     "eslint-plugin-mocha": "4.x",
-    "eslint-plugin-node": "5.x",
+    "eslint-plugin-node": "6.x",
     "eslint-plugin-promise": "3.x",
     "eslint-plugin-security": "1.x"
+  },
+  "devDependencies": {
+    "chalk": "2.x",
+    "eslint-find-rules": "3.x",
+    "lodash": "4.x",
+    "table": "4.x"
   },
   "repository": {
     "type": "git",

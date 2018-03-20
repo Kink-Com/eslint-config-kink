@@ -5,6 +5,7 @@ module.exports = {
 		'plugin:node/recommended'
 	],
 	plugins: [
+		'dependencies',
 		'jsdoc',
 		'mocha',
 		'node',
@@ -66,6 +67,12 @@ module.exports = {
 			'error',
 			'all'
 		],
+
+		// https://www.npmjs.com/package/eslint-plugin-dependencies
+		'dependencies/case-sensitive': 1,
+		'dependencies/no-cycles': 1,
+		'dependencies/no-unresolved': 1,
+		'dependencies/require-json-ext': 1,
 
 		// http://eslint.org/docs/rules/dot-notation
 		'dot-notation': [
