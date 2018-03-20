@@ -54,7 +54,13 @@ To execute ESLint directly:
 To see unused rules:
 
 ```bash
-node ./debugRules.js
+./unusedRules.js
+```
+
+To filter the report:
+
+```bash
+./unusedRules.js -h
 ```
 
 For more details about maintaining these standards, see http://eslint.org/docs/developer-guide/shareable-configs
