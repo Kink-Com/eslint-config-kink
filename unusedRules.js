@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/* eslint node/shebang: 0, no-process-exit: 0, security/detect-non-literal-require: 0 */
+
 'use strict';
 
 const argv = require('minimist')(process.argv.slice(2));
@@ -28,7 +30,7 @@ const recommendedRules = {
 	// eslint-plugin-dependencies has no recommended.
 	// eslint-plugin-jsdoc has no recommended.
 	mocha: require('eslint-plugin-mocha').configs.recommended.rules,
-	node: require('eslint-plugin-node/lib/recommended').rules,
+	node: require('eslint-plugin-node/lib/recommended.json').rules,
 	promise: require('eslint-plugin-promise').configs.recommended.rules,
 	security: require('eslint-plugin-security').configs.recommended.rules
 };
@@ -53,7 +55,7 @@ unused.forEach(rule => {
 
 	if (isPlugin) {
 		// Use plugin homepage.
-		const projectJson = require(`${process.cwd()}/node_modules/eslint-plugin-${plugin}/package.json`); // eslint-disable-line security/detect-non-literal-require
+		const projectJson = require(`${process.cwd()}/node_modules/eslint-plugin-${plugin}/package.json`);
 		url = projectJson.homepage || '?';
 	}
 
@@ -127,5 +129,3 @@ if (rows.length) {
 
 console.log(`${chalk.bold('Counts:')} ${countsReport.join(', ')}`);
 console.log();
-
-
