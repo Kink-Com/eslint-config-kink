@@ -4,7 +4,8 @@
 
 - Updated `eslint-plugin-node`
 - Added https://www.npmjs.com/package/eslint-plugin-dependencies
-- Added `./unusedRules.js`
+- Added `./unusedRules.js` report
+- Removed `e2e.js` (no longer used)
 
 ## v1.3.2 - 2018.02.23
 
