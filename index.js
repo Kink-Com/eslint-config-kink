@@ -5,6 +5,7 @@ module.exports = {
 		'plugin:node/recommended'
 	],
 	plugins: [
+		'dependencies',
 		'jsdoc',
 		'mocha',
 		'node',
@@ -66,6 +67,19 @@ module.exports = {
 			'error',
 			'all'
 		],
+
+		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciescase-sensitive
+		'dependencies/case-sensitive': 1,
+
+		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciesno-cycles
+		'dependencies/no-cycles': 1,
+
+		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciesno-unresolved
+		// Duplicates node/no-missing-require
+		'dependencies/no-unresolved': 0,
+
+		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciesrequire-json-ext
+		'dependencies/require-json-ext': 1,
 
 		// http://eslint.org/docs/rules/dot-notation
 		'dot-notation': [
@@ -219,6 +233,18 @@ module.exports = {
 			}
 		],
 
+		// https://github.com/nodejs/node/blob/8191af5b292aa5d5f07492105781b6cf1d91c42f/.eslintrc.yaml#L104
+		'no-restricted-syntax': [2, {
+			selector: 'CallExpression[callee.name=\'setTimeout\'][arguments.length<2]',
+			message: 'setTimeout() must be invoked with at least two arguments.'
+		}, {
+			selector: 'CallExpression[callee.name=\'setInterval\'][arguments.length<2]',
+			message: 'setInterval() must be invoked with at least 2 arguments.'
+		}, {
+			selector: 'ThrowStatement > CallExpression[callee.name=/Error$/]',
+			message: 'Use new keyword when throwing an Error.'
+		}],
+
 		// http://eslint.org/docs/rules/no-self-assign
 		'no-self-assign': [
 			'error',
@@ -226,6 +252,9 @@ module.exports = {
 				props: true
 			}
 		],
+
+		// https://eslint.org/docs/rules/no-throw-literal
+		'no-throw-literal': 'error',
 
 		// http://eslint.org/docs/rules/no-var
 		// https://github.com/airbnb/javascript#references--disallow-var
@@ -296,6 +325,9 @@ module.exports = {
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-catch-or-return
 		'promise/catch-or-return': 'warn',
+
+		// https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/no-new-statics.md
+		'promise/no-new-statics': 'error',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-no-return-wrap
 		'promise/no-return-wrap': 'warn',
