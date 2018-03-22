@@ -235,14 +235,14 @@ module.exports = {
 
 		// https://github.com/nodejs/node/blob/8191af5b292aa5d5f07492105781b6cf1d91c42f/.eslintrc.yaml#L104
 		'no-restricted-syntax': [2, {
-			selector: "CallExpression[callee.name='setTimeout'][arguments.length<2]",
-			message: "setTimeout() must be invoked with at least two arguments."
+			selector: 'CallExpression[callee.name=\'setTimeout\'][arguments.length<2]',
+			message: 'setTimeout() must be invoked with at least two arguments.'
 		}, {
-			selector: "CallExpression[callee.name='setInterval'][arguments.length<2]",
-			message: "setInterval() must be invoked with at least 2 arguments."
+			selector: 'CallExpression[callee.name=\'setInterval\'][arguments.length<2]',
+			message: 'setInterval() must be invoked with at least 2 arguments.'
 		}, {
-			selector: "ThrowStatement > CallExpression[callee.name=/Error$/]",
-			message: "Use new keyword when throwing an Error."
+			selector: 'ThrowStatement > CallExpression[callee.name=/Error$/]',
+			message: 'Use new keyword when throwing an Error.'
 		}],
 
 		// http://eslint.org/docs/rules/no-self-assign
