@@ -2,8 +2,10 @@
 
 ## v1.4.0 - 2018.03.20
 
-- Updated `eslint-plugin-node`
-- Added https://www.npmjs.com/package/eslint-plugin-dependencies
+- Updated [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node/releases/tag/v6.0.0)
+- Added [`eslint-plugin-dependencies`](https://www.npmjs.com/package/eslint-plugin-dependencies)
+- Added [`no-throw-literal`](https://eslint.org/docs/rules/no-throw-literal)
+- Added [`no-restricted-syntax`](https://eslint.org/docs/rules/no-restricted-syntax) rules from Node.js core for requiring new for Error creation, `setTimeout` and `setInterval`
 - Added `./unusedRules.js` report
 - Removed `e2e.js` (no longer used)
 
