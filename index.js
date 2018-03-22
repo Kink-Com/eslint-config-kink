@@ -75,7 +75,8 @@ module.exports = {
 		'dependencies/no-cycles': 1,
 
 		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciesno-unresolved
-		'dependencies/no-unresolved': 1,
+		// Duplicates node/no-missing-require
+		'dependencies/no-unresolved': 0,
 
 		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciesrequire-json-ext
 		'dependencies/require-json-ext': 1,
@@ -324,6 +325,9 @@ module.exports = {
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-catch-or-return
 		'promise/catch-or-return': 'warn',
+
+		// https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/no-new-statics.md
+		'promise/no-new-statics': 'error',
 
 		// https://www.npmjs.com/package/eslint-plugin-promise#rule-no-return-wrap
 		'promise/no-return-wrap': 'warn',

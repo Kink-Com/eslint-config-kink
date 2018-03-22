@@ -6,6 +6,7 @@
 - Added [`eslint-plugin-dependencies`](https://www.npmjs.com/package/eslint-plugin-dependencies)
 - Added [`no-throw-literal`](https://eslint.org/docs/rules/no-throw-literal)
 - Added [`no-restricted-syntax`](https://eslint.org/docs/rules/no-restricted-syntax) rules from Node.js core for requiring new for Error creation, `setTimeout` and `setInterval`
+- Added [`promise/promise/no-new-statics`](https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/no-new-statics.md)
 - Added `./unusedRules.js` report
 - Removed `e2e.js` (no longer used)
 
