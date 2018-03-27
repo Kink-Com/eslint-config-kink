@@ -290,6 +290,12 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-void
 		'no-void': 'error',
 
+		// https://eslint.org/docs/rules/object-curly-spacing
+		'object-curly-spacing': [
+			'error',
+			'always'
+		],
+
 		// http://eslint.org/docs/rules/object-shorthand
 		// https://github.com/airbnb/javascript#es6-object-shorthand
 		'object-shorthand': 'error',
@@ -414,6 +420,12 @@ module.exports = {
 			'always'
 		],
 
+		// https://eslint.org/docs/rules/space-in-parens
+		'space-in-parens': [
+			'error',
+			'never'
+		],
+
 		// http://eslint.org/docs/rules/space-infix-ops
 		'space-infix-ops': [
 			'error'
@@ -436,6 +448,12 @@ module.exports = {
 		strict: [
 			'error',
 			'global'
+		],
+
+		// https://eslint.org/docs/rules/template-curly-spacing
+		'template-curly-spacing': [
+			'error',
+			'never'
 		],
 
 		// http://eslint.org/docs/rules/wrap-iife
