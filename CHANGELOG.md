@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+## v1.4.1 - 2018.03.27
+
+- Added [`object-curly-spacing`](https://eslint.org/docs/rules/object-curly-spacing)
+- Added [`space-in-parens`](https://eslint.org/docs/rules/space-in-parens) 
+
 ## v1.4.0 - 2018.03.20
 
 - Updated [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node/releases/tag/v6.0.0)

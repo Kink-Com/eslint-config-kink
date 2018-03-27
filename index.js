@@ -290,6 +290,12 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-void
 		'no-void': 'error',
 
+		// https://eslint.org/docs/rules/object-curly-spacing
+		'object-curly-spacing': [
+			'error',
+			'always'
+		],
+
 		// http://eslint.org/docs/rules/object-shorthand
 		// https://github.com/airbnb/javascript#es6-object-shorthand
 		'object-shorthand': 'error',
@@ -412,6 +418,12 @@ module.exports = {
 		'spaced-comment': [
 			'error',
 			'always'
+		],
+
+		// https://eslint.org/docs/rules/space-in-parens
+		'space-in-parens': [
+			'error',
+			'never'
 		],
 
 		// http://eslint.org/docs/rules/space-infix-ops
