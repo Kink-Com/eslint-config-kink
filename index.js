@@ -450,6 +450,12 @@ module.exports = {
 			'global'
 		],
 
+		// https://eslint.org/docs/rules/template-curly-spacing
+		'template-curly-spacing': [
+			'error',
+			'never'
+		],
+
 		// http://eslint.org/docs/rules/wrap-iife
 		'wrap-iife': [
 			'error',

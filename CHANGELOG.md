@@ -4,6 +4,7 @@
 
 - Added [`object-curly-spacing`](https://eslint.org/docs/rules/object-curly-spacing)
 - Added [`space-in-parens`](https://eslint.org/docs/rules/space-in-parens) 
+- Added [`template-curly-spacing`](https://eslint.org/docs/rules/template-curly-spacing) 
 
 ## v1.4.0 - 2018.03.20
 
