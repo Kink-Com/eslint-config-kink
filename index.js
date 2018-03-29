@@ -198,6 +198,9 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-const-assign.html
 		'no-const-assign': 'error',
 
+		// http://eslint.org/docs/rules/no-delete-var
+		'no-delete-var': 'error',
+
 		// http://eslint.org/docs/rules/no-dupe-args
 		'no-dupe-args': 'error',
 
@@ -210,11 +213,26 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-else-return
 		'no-else-return': 'error',
 
+		// http://eslint.org/docs/rules/no-empty
+		'no-empty': 'error',
+
+		// http://eslint.org/docs/rules/no-empty-character-class
+		'no-empty-character-class': 'error',
+
 		// http://eslint.org/docs/rules/no-empty-pattern
 		'no-empty-pattern': 'error',
 
+		// https://eslint.org/docs/rules/no-ex-assign
+		'no-ex-assign': 'error',
+
 		// https://eslint.org/docs/rules/no-extra-semi
 		'no-extra-semi': 'error',
+
+		// https://eslint.org/docs/rules/no-invalid-regexp
+		'no-invalid-regexp': [
+			'error',
+			{ allowConstructorFlags: ['u', 'y'] }
+		],
 
 		// http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
 		'no-mixed-spaces-and-tabs': [

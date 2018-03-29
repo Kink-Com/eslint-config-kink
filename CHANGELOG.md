@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## v1.4.2 - 2018.03.29
+
+- Added [`no-empty`](https://eslint.org/docs/rules/no-empty)
+- Added [`no-delete-var`](https://eslint.org/docs/rules/no-delete-var)
+- Added [`no-empty-character-class`](https://eslint.org/docs/rules/no-empty-character-class)
+- Added [`no-ex-assign`](https://eslint.org/docs/rules/no-ex-assign)
+- Added [`no-invalid-regexp`](https://eslint.org/docs/rules/no-invalid-regexp)
+
 ## v1.4.1 - 2018.03.27
 
 - Added [`object-curly-spacing`](https://eslint.org/docs/rules/object-curly-spacing)
