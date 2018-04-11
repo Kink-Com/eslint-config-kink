@@ -2,7 +2,7 @@
 
 ## v1.5.0 - 2018.04.11
 
-- Added 
+- Added `vue.js` that uses [`eslint-plugin-vue`](https://github.com/vuejs/eslint-plugin-vue/)
 - Added [`no-fallthrough`](https://eslint.org/docs/rules/no-fallthrough)
 - Added [`no-irregular-whitespace`](https://eslint.org/docs/rules/no-irregular-whitespace)
 - Added [`no-unexpected-multiline`](https://eslint.org/docs/rules/no-unexpected-multiline)
