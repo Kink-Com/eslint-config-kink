@@ -1,0 +1,54 @@
+version: 2
+jobs:
+  npm_install:
+    docker:
+      - image: circleci/node:6.14-stretch
+    working_directory: ~/build
+    steps:
+      - checkout
+      - attach_workspace:
+           at: ~/build
+      - restore_cache:
+          keys:
+            - node-dependencies-{{ checksum "package.json" }}
+            - node-dependencies-
+      - run: npm install
+      - persist_to_workspace:
+          root: .
+          paths: node_modules
+      - save_cache:
+          key: node-dependencies{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+  lint:
+    working_directory: ~/build
+    docker:
+      - image: circleci/node:6.14-stretch
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/build
+      - run: ./node_modules/.bin/eslint .
+      - run: ./node_modules/.bin/pjv -w -r
+  security:
+    working_directory: ~/build
+    docker:
+      - image: circleci/node:6.14-stretch
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/build
+      - run: ./node_modules/.bin/nsp check .
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - npm_install
+      - lint:
+          requires:
+            - npm_install
+      - security:
+          requires:
+            - npm_install

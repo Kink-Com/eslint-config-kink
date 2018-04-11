@@ -1,5 +1,16 @@
 # CHANGELOG.md
 
+## v1.5.0 - 2018.04.11
+
+- Added 
+- Added [`no-fallthrough`](https://eslint.org/docs/rules/no-fallthrough)
+- Added [`no-irregular-whitespace`](https://eslint.org/docs/rules/no-irregular-whitespace)
+- Added [`no-unexpected-multiline`](https://eslint.org/docs/rules/no-unexpected-multiline)
+- Added [`no-redeclare`](https://eslint.org/docs/rules/no-redeclare)
+- Added [`no-new-symbol`](https://eslint.org/docs/rules/no-new-symbol)
+- Added [`no-extra-boolean-cast`](https://eslint.org/docs/rules/no-extra-boolean-cast)
+- Added [`mocha/no-exclusive-tests`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md)
+
 ## v1.4.2 - 2018.03.29
 
 - Added [`no-empty`](https://eslint.org/docs/rules/no-empty)

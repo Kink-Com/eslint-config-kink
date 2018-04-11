@@ -168,7 +168,10 @@ module.exports = {
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/handle-done-callback.md
 		'mocha/handle-done-callback': 'error',
 
-	    // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-return-and-callback.md
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md
+		'mocha/no-exclusive-tests': 'error',
+
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-return-and-callback.md
 		'mocha/no-return-and-callback': 'error',
 
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-sibling-hooks.md
@@ -225,14 +228,23 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-ex-assign
 		'no-ex-assign': 'error',
 
+		// http://eslint.org/docs/rules/no-extra-boolean-cast
+		'no-extra-boolean-cast': 'error',
+
 		// https://eslint.org/docs/rules/no-extra-semi
 		'no-extra-semi': 'error',
+
+		// https://eslint.org/docs/rules/no-fallthrough
+		'no-fallthrough': 'error',
 
 		// https://eslint.org/docs/rules/no-invalid-regexp
 		'no-invalid-regexp': [
 			'error',
 			{ allowConstructorFlags: ['u', 'y'] }
 		],
+
+		// https://eslint.org/docs/rules/no-irregular-whitespace
+		'no-irregular-whitespace': 'error',
 
 		// http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
 		'no-mixed-spaces-and-tabs': [
@@ -250,6 +262,12 @@ module.exports = {
 				max: 1
 			}
 		],
+
+		// http://eslint.org/docs/rules/no-new-symbol
+		'no-new-symbol': 'error',
+
+		// http://eslint.org/docs/rules/no-redeclare
+		'no-redeclare': 'error',
 
 		// https://github.com/nodejs/node/blob/8191af5b292aa5d5f07492105781b6cf1d91c42f/.eslintrc.yaml#L104
 		'no-restricted-syntax': [2, {
@@ -304,6 +322,9 @@ module.exports = {
 				varsIgnorePattern: 'should|expect'
 			}
 		],
+
+		// https://eslint.org/docs/rules/no-unexpected-multiline
+		'no-unexpected-multiline': 'error',
 
 		// http://eslint.org/docs/rules/no-void
 		'no-void': 'error',
