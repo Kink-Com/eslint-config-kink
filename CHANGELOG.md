@@ -12,7 +12,7 @@
 - Added [`valid-typeof`](https://eslint.org/docs/rules/valid-typeof)
 - Added [`use-isnan`](https://eslint.org/docs/rules/use-isnan)
 - Added [`require-yield`](https://eslint.org/docs/rules/require-yield)
-- Added [`no-unused-labels`](https://eslint.org/docs/rules/no-unused-labels 
+- Added [`no-unused-labels`](https://eslint.org/docs/rules/no-unused-labels) 
 - Added [`no-unsafe-finally`](https://eslint.org/docs/rules/no-unsafe-finally)
 - Added [`no-this-before-super`](https://eslint.org/docs/rules/no-this-before-super) 
 - Added [`mocha/no-exclusive-tests`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md)
