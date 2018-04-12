@@ -37,6 +37,16 @@ For frontend projects, also add `./public/.eslintrc.json` with the following:
 }
 ```
 
+### Vue
+
+For Vue projects, also add `./client/.eslintrc.json` with the following:
+
+```javascript
+{
+  "extends": "kink/vue"
+}
+```
+
 ## Use
 
 Optimally, you should configure your editor to automatically lint all files.

@@ -1,5 +1,22 @@
 # CHANGELOG.md
 
+## v1.5.0 - 2018.04.11
+
+- Added `vue.js` that uses [`eslint-plugin-vue`](https://github.com/vuejs/eslint-plugin-vue/)
+- Added [`no-fallthrough`](https://eslint.org/docs/rules/no-fallthrough)
+- Added [`no-irregular-whitespace`](https://eslint.org/docs/rules/no-irregular-whitespace)
+- Added [`no-unexpected-multiline`](https://eslint.org/docs/rules/no-unexpected-multiline)
+- Added [`no-redeclare`](https://eslint.org/docs/rules/no-redeclare)
+- Added [`no-new-symbol`](https://eslint.org/docs/rules/no-new-symbol)
+- Added [`no-extra-boolean-cast`](https://eslint.org/docs/rules/no-extra-boolean-cast)
+- Added [`valid-typeof`](https://eslint.org/docs/rules/valid-typeof)
+- Added [`use-isnan`](https://eslint.org/docs/rules/use-isnan)
+- Added [`require-yield`](https://eslint.org/docs/rules/require-yield)
+- Added [`no-unused-labels`](https://eslint.org/docs/rules/no-unused-labels)
+- Added [`no-unsafe-finally`](https://eslint.org/docs/rules/no-unsafe-finally)
+- Added [`no-this-before-super`](https://eslint.org/docs/rules/no-this-before-super) 
+- Added [`mocha/no-exclusive-tests`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md)
+
 ## v1.4.2 - 2018.03.29
 
 - Added [`no-empty`](https://eslint.org/docs/rules/no-empty)
