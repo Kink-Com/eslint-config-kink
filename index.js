@@ -289,6 +289,9 @@ module.exports = {
 			}
 		],
 
+		// https://eslint.org/docs/rules/no-this-before-super
+		'no-this-before-super': 'error',
+
 		// https://eslint.org/docs/rules/no-throw-literal
 		'no-throw-literal': 'error',
 
@@ -305,6 +308,9 @@ module.exports = {
 
 		// http://eslint.org/docs/rules/no-unreachable
 		'no-unreachable': 'error',
+
+		// http://eslint.org/docs/rules/no-unused-labels
+		'no-unused-labels': 'error',
 
 		// http://eslint.org/docs/rules/no-useless-escape
 		'no-useless-escape': 'error',
@@ -325,6 +331,9 @@ module.exports = {
 
 		// https://eslint.org/docs/rules/no-unexpected-multiline
 		'no-unexpected-multiline': 'error',
+
+		// https://eslint.org/docs/rules/no-unsafe-finally
+		'no-unsafe-finally': 'error',
 
 		// http://eslint.org/docs/rules/no-void
 		'no-void': 'error',
@@ -404,6 +413,9 @@ module.exports = {
 			'warn',
 			'single'
 		],
+
+		// http://eslint.org/docs/rules/require-yield
+		'require-yield': 'error',
 
 		// https://github.com/nodesecurity/eslint-plugin-security#detect-buffer-noassert
 		'security/detect-buffer-noassert': 1,
@@ -495,11 +507,8 @@ module.exports = {
 			'never'
 		],
 
-		// http://eslint.org/docs/rules/wrap-iife
-		'wrap-iife': [
-			'error',
-			'inside'
-		],
+		// http://eslint.org/docs/rules/use-isnan
+		'use-isnan': 'error',
 
 		// http://eslint.org/docs/rules/valid-jsdoc
 		'valid-jsdoc': [
@@ -514,6 +523,15 @@ module.exports = {
 					return: 'return'
 				}
 			}
+		],
+
+		// http://eslint.org/docs/rules/valid-typeof
+		'valid-typeof': 'error',
+
+		// http://eslint.org/docs/rules/wrap-iife
+		'wrap-iife': [
+			'error',
+			'inside'
 		]
 	},
 	settings: {
