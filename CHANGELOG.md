@@ -1,5 +1,9 @@
 # CHANGELOG.md
 
+## v1.5.1 - 2018.04.13
+
+- Disabled `node/no-unsupported-features` in `vue.js`
+
 ## v1.5.0 - 2018.04.11
 
 - Added `vue.js` that uses [`eslint-plugin-vue`](https://github.com/vuejs/eslint-plugin-vue/)
