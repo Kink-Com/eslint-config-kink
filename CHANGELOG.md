@@ -49,11 +49,104 @@
 
 - Added http://eslint.org/docs/rules/id-blacklist to `web.js`
 
+
 ## v1.3.1 - 2017.12.15
 
-- Added https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/catch-or-return.md to `web.js`
+- Added
+	-  [https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/catch-or-return.md]() to `web.js`
 
-## ...
+## v1.3.0 - 2017.11.2
+
+- Updated 
+  - index.js
+     - eslint-plugin-mocha
+     - eslint-plugin-node
+     - additonal rules regarding promises
+  - package.json
+      - version and dependencies
+
+## v1.2.1 - 2017-9-19
+
+  - Updated
+    - package.json
+      - version and dependencies
+
+## v1.2.0 - 2017-9-19
+
+  - Updated
+    - index.js
+      - 'promise/no-return-wrap': 'off',
+    - package.json
+      - version and dependencies
+
+## v1.1.0 - 2017-8-31
+
+  - Added
+    - .eslintrc.json
+    - .travis.yml
+
+  - Updated
+    - index.js
+        - no-com-are-neg-zero
+        - no-extra-semi
+        - padding-line-between-statements
+        - semi-spacing
+
+    - package.json 
+       - version and dependencies
+
+## v1.0.17 - 2017-8-10
+
+  - Updated
+    - package.json
+    - web.js
+
+## v1.0.16 - 2017-7-25
+
+  - Updated
+    - Readme.md
+      - Removing reference to yarn
+
+## v1.0.15
+
+  - Updated
+    - index.js
+      - promise rules
+
+    - package.json
+      - version increase
+
+##v1.0.14 - 2017-6-1
+
+  - Updated
+    - README.md
+      - Yarn reference removed
+
+    - index.js 
+      - promise rules added
+
+    - package.json 
+      - version and dependencies
+
+##v1.0.13 - 2017-5-13
+
+  -Updated
+    - index.js 
+      - no-empty-pattern
+      - no-self-assign
+      - no-useless-return
+    - package.json
+      - version increase
+##v1.0.12 - 2017-5-4
+  -Updated 
+    - package.json
+      - version increase
+
+##v1.0.11 - 2017-3-31
+  -Updated 
+    - added variable name min length with exceptions (warning)
+    - package.json
+      - version increase
 
 THERE BE DRAGONS HERE
 
