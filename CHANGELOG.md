@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## v1.6.0 - 2018.04.19
+
+- Added [`no-unsafe-negation`](https://eslint.org/docs/rules/no-unsafe-negation)
+- Added [`no-sparse-arrays`](https://eslint.org/docs/rules/no-sparse-arrays)
+- Added [`no-regex-spaces`](https://eslint.org/docs/rules/no-regex-spaces)
+- Added [`no-octal`](https://eslint.org/docs/rules/no-octal)
+- Added [`no-obj-calls`](https://eslint.org/docs/rules/no-obj-calls)
+- Added [`no-inner-declarations`](https://eslint.org/docs/rules/no-inner-declarations)
+- Added [`mocha/no-pending-tests`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-pending-tests.md)
+
 ## v1.5.1 - 2018.04.13
 
 - Disabled `node/no-unsupported-features` in `vue.js`

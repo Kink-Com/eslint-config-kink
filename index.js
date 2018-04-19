@@ -171,6 +171,9 @@ module.exports = {
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md
 		'mocha/no-exclusive-tests': 'error',
 
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-pending-tests.md
+		'mocha/no-pending-tests': 'error',
+
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-return-and-callback.md
 		'mocha/no-return-and-callback': 'error',
 
@@ -246,6 +249,9 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-irregular-whitespace
 		'no-irregular-whitespace': 'error',
 
+		// https://eslint.org/docs/rules/no-inner-declarations
+		'no-inner-declarations': [ 'warn', 'both' ],
+
 		// http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
 		'no-mixed-spaces-and-tabs': [
 			'error',
@@ -266,8 +272,17 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-new-symbol
 		'no-new-symbol': 'error',
 
+		// http://eslint.org/docs/rules/no-obj-calls
+		'no-obj-calls': 'error',
+
+		// http://eslint.org/docs/rules/no-octal
+		'no-octal': 'error',
+
 		// http://eslint.org/docs/rules/no-redeclare
 		'no-redeclare': 'error',
+
+		// http://eslint.org/docs/rules/no-regex-spaces
+		'no-regex-spaces': 'error',
 
 		// https://github.com/nodejs/node/blob/8191af5b292aa5d5f07492105781b6cf1d91c42f/.eslintrc.yaml#L104
 		'no-restricted-syntax': [2, {
@@ -289,6 +304,9 @@ module.exports = {
 			}
 		],
 
+		// https://eslint.org/docs/rules/no-sparse-arrays
+		'no-sparse-arrays': 'error',
+
 		// https://eslint.org/docs/rules/no-this-before-super
 		'no-this-before-super': 'error',
 
@@ -305,6 +323,9 @@ module.exports = {
 
 		// http://eslint.org/docs/rules/no-undef-init
 		'no-undef-init': 'error',
+
+		// http://eslint.org/docs/rules/no-unsafe-negation
+		'no-unsafe-negation': 'error',
 
 		// http://eslint.org/docs/rules/no-unreachable
 		'no-unreachable': 'error',
