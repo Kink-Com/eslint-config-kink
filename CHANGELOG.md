@@ -1,5 +1,20 @@
 # CHANGELOG.md
 
+## v1.7.0 - 2018.05.03
+
+- Added [`constructor-super`](https://eslint.org/docs/rules/constructor-super)
+- Added [`no-case-declarations`](https://eslint.org/docs/rules/no-case-declarations)
+- Added [`no-class-assign`](https://eslint.org/docs/rules/no-class-assign)
+- Added [`no-cond-assign`](https://eslint.org/docs/rules/no-cond-assign)
+- Added [`no-console`](https://eslint.org/docs/rules/no-console) as a warning
+- Added [`no-constant-condition`](https://eslint.org/docs/rules/no-constant-condition)
+- Added [`no-control-regex`](https://eslint.org/docs/rules/no-control-regex)
+- Added [`no-debugger`](https://eslint.org/docs/rules/no-debugger) as a warning
+- Added [`no-dupe-class-members`](https://eslint.org/docs/rules/no-dupe-class-members)
+- Added [`no-func-assign`](https://eslint.org/docs/rules/no-func-assign)
+- Added [`no-global-assign`](https://eslint.org/docs/rules/no-global-assign)
+- Upgraded `eslint-plugin-mocha` to [5.x](https://github.com/lo1tuma/eslint-plugin-mocha/releases/tag/5.0.0)
+
 ## v1.6.0 - 2018.04.19
 
 - Added [`no-unsafe-negation`](https://eslint.org/docs/rules/no-unsafe-negation)
@@ -62,8 +77,7 @@
 
 ## v1.3.1 - 2017.12.15
 
-- Added
-	-  [https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/catch-or-return.md]() to `web.js`
+- Added [`promise/catch-or-return`](https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/catch-or-return.md) to `web.js`
 
 ## v1.3.0 - 2017.11.2
 
@@ -71,17 +85,15 @@
   - index.js
      - eslint-plugin-mocha
      - eslint-plugin-node
-     - additonal rules regarding promises
-  - package.json
-      - version and dependencies
+     - additional rules regarding promises
 
-## v1.2.1 - 2017-9-19
+## v1.2.1 - 2017.09.19
 
   - Updated
     - package.json
       - version and dependencies
 
-## v1.2.0 - 2017-9-19
+## v1.2.0 - 2017.09.19
 
   - Updated
     - index.js
@@ -89,7 +101,7 @@
     - package.json
       - version and dependencies
 
-## v1.1.0 - 2017-8-31
+## v1.1.0 - 2017.08.31
 
   - Added
     - .eslintrc.json
@@ -105,13 +117,13 @@
     - package.json 
        - version and dependencies
 
-## v1.0.17 - 2017-8-10
+## v1.0.17 - 2017.08.10
 
   - Updated
     - package.json
     - web.js
 
-## v1.0.16 - 2017-7-25
+## v1.0.16 - 2017.07.25
 
   - Updated
     - Readme.md
@@ -126,7 +138,7 @@
     - package.json
       - version increase
 
-##v1.0.14 - 2017-6-1
+## v1.0.14 - 2017.06.01
 
   - Updated
     - README.md
@@ -138,7 +150,7 @@
     - package.json 
       - version and dependencies
 
-##v1.0.13 - 2017-5-13
+## v1.0.13 - 2017.05.13
 
   -Updated
     - index.js 
@@ -147,12 +159,14 @@
       - no-useless-return
     - package.json
       - version increase
-##v1.0.12 - 2017-5-4
+      
+## v1.0.12 - 2017.05.04
   -Updated 
     - package.json
       - version increase
 
-##v1.0.11 - 2017-3-31
+## v1.0.11 - 2017.03.31
+
   -Updated 
     - added variable name min length with exceptions (warning)
     - package.json

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-/* eslint node/shebang: 0, no-process-exit: 0, security/detect-non-literal-require: 0 */
+/* eslint node/shebang: 0, no-process-exit: 0, security/detect-non-literal-require: 0, no-console: 0 */
 
 'use strict';
 

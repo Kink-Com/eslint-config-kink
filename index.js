@@ -62,6 +62,9 @@ module.exports = {
 			'last'
 		],
 
+		// https://eslint.org/docs/rules/constructor-super
+		'constructor-super': 'error',
+
 		// http://eslint.org/docs/rules/curly
 		curly: [
 			'error',
@@ -198,17 +201,41 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-caller
 		'no-caller': 'error',
 
-		// http://eslint.org/docs/rules/no-compare-neg-zero.html
+		// https://eslint.org/docs/rules/no-case-declarations
+		'no-case-declarations': 'error',
+
+		// https://eslint.org/docs/rules/no-class-assign
+		'no-class-assign': 'error',
+
+		// http://eslint.org/docs/rules/no-compare-neg-zero
 		'no-compare-neg-zero': 'error',
 
-		// http://eslint.org/docs/rules/no-const-assign.html
+		// http://eslint.org/docs/rules/no-cond-assign
+		'no-cond-assign': 'error',
+
+		// http://eslint.org/docs/rules/no-console
+		'no-console': 'warn',
+
+		// http://eslint.org/docs/rules/no-constant-condition
+		'no-constant-condition': 'error',
+
+		// http://eslint.org/docs/rules/no-const-assign
 		'no-const-assign': 'error',
+
+		// http://eslint.org/docs/rules/no-control-regex
+		'no-control-regex': 'error',
+
+		// http://eslint.org/docs/rules/no-debugger
+		'no-debugger': 'warn',
 
 		// http://eslint.org/docs/rules/no-delete-var
 		'no-delete-var': 'error',
 
 		// http://eslint.org/docs/rules/no-dupe-args
 		'no-dupe-args': 'error',
+
+		// http://eslint.org/docs/rules/no-dupe-class-members
+		'no-dupe-class-members': 'error',
 
 		// http://eslint.org/docs/rules/no-dupe-keys
 		'no-dupe-keys': 'error',
@@ -239,6 +266,12 @@ module.exports = {
 
 		// https://eslint.org/docs/rules/no-fallthrough
 		'no-fallthrough': 'error',
+
+		// https://eslint.org/docs/rules/no-func-assign
+		'no-func-assign': 'error',
+
+		// https://eslint.org/docs/rules/no-global-assign
+		'no-global-assign': 'error',
 
 		// https://eslint.org/docs/rules/no-invalid-regexp
 		'no-invalid-regexp': [

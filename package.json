@@ -1,13 +1,13 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {
     "eslint": "4.x",
     "eslint-plugin-dependencies": "2.x",
     "eslint-plugin-jsdoc": "3.x",
-    "eslint-plugin-mocha": "4.x",
+    "eslint-plugin-mocha": "5.x",
     "eslint-plugin-node": "6.x",
     "eslint-plugin-promise": "3.x",
     "eslint-plugin-security": "1.x",
