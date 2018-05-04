@@ -27,6 +27,22 @@ In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc
 }
 ```
 
+### Console
+
+For console-based applications, such as migrations, CLI utilities and so forth, add `/.eslintrc.json` in the target directories with the following:
+                                                                                
+```javascript
+{
+  "extends": "kink/console"
+}
+```
+
+To disable checks in an individual file:
+
+```javascript
+/* eslint node/shebang: 0, no-process-exit: 0, no-console: 0 */
+```
+
 ### Frontend
 
 For frontend projects, also add `./public/.eslintrc.json` with the following:
