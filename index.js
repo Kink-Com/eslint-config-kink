@@ -43,7 +43,7 @@ module.exports = {
 		// http://eslint.org/docs/rules/comma-dangle
 		'comma-dangle': [
 			'error',
-			'never'
+			'only-multiline'
 		],
 
 		// http://eslint.org/docs/rules/comma-spacing
@@ -59,7 +59,7 @@ module.exports = {
 		// https://github.com/airbnb/javascript#commas--leading-trailing
 		'comma-style': [
 			'error',
-			'only-multiline'
+			'last'
 		],
 
 		// https://eslint.org/docs/rules/constructor-super

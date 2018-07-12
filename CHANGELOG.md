@@ -1,5 +1,9 @@
 # CHANGELOG.md
 
+## v1.7.1 - 2018.07.12
+- Added [`only-multiline`] to `comma-dangle`(https://eslint.org/docs/rules/comma-dangle#only-multiline)
+
+
 ## v1.7.0 - 2018.05.03
 
 - Added [`constructor-super`](https://eslint.org/docs/rules/constructor-super)
@@ -43,7 +47,7 @@
 - Added [`require-yield`](https://eslint.org/docs/rules/require-yield)
 - Added [`no-unused-labels`](https://eslint.org/docs/rules/no-unused-labels)
 - Added [`no-unsafe-finally`](https://eslint.org/docs/rules/no-unsafe-finally)
-- Added [`no-this-before-super`](https://eslint.org/docs/rules/no-this-before-super) 
+- Added [`no-this-before-super`](https://eslint.org/docs/rules/no-this-before-super)
 - Added [`mocha/no-exclusive-tests`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md)
 
 ## v1.4.2 - 2018.03.29
@@ -57,8 +61,8 @@
 ## v1.4.1 - 2018.03.27
 
 - Added [`object-curly-spacing`](https://eslint.org/docs/rules/object-curly-spacing)
-- Added [`space-in-parens`](https://eslint.org/docs/rules/space-in-parens) 
-- Added [`template-curly-spacing`](https://eslint.org/docs/rules/template-curly-spacing) 
+- Added [`space-in-parens`](https://eslint.org/docs/rules/space-in-parens)
+- Added [`template-curly-spacing`](https://eslint.org/docs/rules/template-curly-spacing)
 
 ## v1.4.0 - 2018.03.20
 
@@ -81,7 +85,7 @@
 
 ## v1.3.0 - 2017.11.2
 
-- Updated 
+- Updated
   - index.js
      - eslint-plugin-mocha
      - eslint-plugin-node
@@ -114,7 +118,7 @@
         - padding-line-between-statements
         - semi-spacing
 
-    - package.json 
+    - package.json
        - version and dependencies
 
 ## v1.0.17 - 2017.08.10
@@ -144,30 +148,30 @@
     - README.md
       - Yarn reference removed
 
-    - index.js 
+    - index.js
       - promise rules added
 
-    - package.json 
+    - package.json
       - version and dependencies
 
 ## v1.0.13 - 2017.05.13
 
   -Updated
-    - index.js 
+    - index.js
       - no-empty-pattern
       - no-self-assign
       - no-useless-return
     - package.json
       - version increase
-      
+
 ## v1.0.12 - 2017.05.04
-  -Updated 
+  -Updated
     - package.json
       - version increase
 
 ## v1.0.11 - 2017.03.31
 
-  -Updated 
+  -Updated
     - added variable name min length with exceptions (warning)
     - package.json
       - version increase
