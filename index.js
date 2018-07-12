@@ -59,7 +59,7 @@ module.exports = {
 		// https://github.com/airbnb/javascript#commas--leading-trailing
 		'comma-style': [
 			'error',
-			'last'
+			'only-multiline'
 		],
 
 		// https://eslint.org/docs/rules/constructor-super
