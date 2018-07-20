@@ -31,15 +31,6 @@ jobs:
           at: ~/build
       - run: ./node_modules/.bin/eslint .
       - run: ./node_modules/.bin/pjv -w -r
-  security:
-    working_directory: ~/build
-    docker:
-      - image: circleci/node:6.14-stretch
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/build
-      - run: ./node_modules/.bin/nsp check .
 
 workflows:
   version: 2
@@ -47,8 +38,5 @@ workflows:
     jobs:
       - npm_install
       - lint:
-          requires:
-            - npm_install
-      - security:
           requires:
             - npm_install
