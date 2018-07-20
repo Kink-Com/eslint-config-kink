@@ -1,5 +1,8 @@
 # CHANGELOG.md
 
+## v1.7.2 - 2018.07.20
+- Removed nsp from circleci config and package.json
+
 ## v1.7.1 - 2018.07.12
 - Added [`only-multiline`] to `comma-dangle`(https://eslint.org/docs/rules/comma-dangle#only-multiline)
 
