@@ -18,7 +18,6 @@
     "eslint-find-rules": "3.x",
     "lodash": "4.x",
     "minimist": "1.x",
-    "nsp": "3.x",
     "package-json-validator": "0.x",
     "table": "4.x"
   },
