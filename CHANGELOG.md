@@ -1,5 +1,8 @@
 # CHANGELOG.md
 
+## v1.7.3 - 2018.08.24
+- Disabled `vue/html-indent` in `vue.js`
+
 ## v1.7.2 - 2018.07.20
 - Removed nsp from circleci config and package.json
 
