@@ -30,7 +30,7 @@ const recommendedRules = {
 	// eslint-plugin-dependencies has no recommended.
 	// eslint-plugin-jsdoc has no recommended.
 	mocha: require('eslint-plugin-mocha').configs.recommended.rules,
-	node: require('eslint-plugin-node/lib/recommended.json').rules,
+	node: require('eslint-plugin-node/lib/configs/recommended.json').rules,
 	promise: require('eslint-plugin-promise').configs.recommended.rules,
 	security: require('eslint-plugin-security').configs.recommended.rules
 };

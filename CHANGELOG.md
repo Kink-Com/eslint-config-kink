@@ -1,14 +1,20 @@
 # CHANGELOG.md
 
+## v1.8.0 - 2018.09.27
+
+- Updated `eslint` to v5, `eslint-plugin-node` to v7, `eslint-plugin-promise` to v4, and `eslint-plugin-vue` to v5, `table` to v5
+
 ## v1.7.3 - 2018.08.24
+
 - Disabled `vue/html-indent` in `vue.js`
 
 ## v1.7.2 - 2018.07.20
-- Removed nsp from circleci config and package.json
+
+- Removed nsp from CircleCI config and package.json
 
 ## v1.7.1 - 2018.07.12
-- Added [`only-multiline`] to `comma-dangle`(https://eslint.org/docs/rules/comma-dangle#only-multiline)
 
+- Added [`only-multiline`](https://eslint.org/docs/rules/comma-dangle#only-multiline) to `comma-dangle`
 
 ## v1.7.0 - 2018.05.03
 
