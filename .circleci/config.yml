@@ -29,7 +29,11 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/build
-      - run: ./node_modules/.bin/eslint .
+      - run:
+          command: ./node_modules/.bin/eslint --format junit -o ./coverage/eslint/results.xml .
+          when: always
+      - store_test_results:
+          path: coverage
       - run: ./node_modules/.bin/pjv -w -r
 
 workflows:
