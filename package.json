@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {
