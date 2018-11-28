@@ -1,5 +1,9 @@
 # CHANGELOG.md
 
+## v1.8.1 - 2018.11.20
+
+- Adds whitelist rule for es-syntax to vue.js
+
 ## v1.8.0 - 2018.09.27
 
 - Updated `eslint` to v5, `eslint-plugin-node` to v7, `eslint-plugin-promise` to v4, and `eslint-plugin-vue` to v5, `table` to v5

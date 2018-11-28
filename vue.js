@@ -17,6 +17,7 @@ module.exports = {
 		'node/no-unsupported-features': 0,
 		// `html-indent` does not currently support spaces & since we are all
 		// tabs everywhere, let's keep it that way!
-		'vue/html-indent': 0
+		'vue/html-indent': 0,
+		'node/no-unsupported-features/es-syntax': 'off'
 	}
 };
