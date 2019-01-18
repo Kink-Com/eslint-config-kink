@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## v1.9.0 - 2019.01.18
+
+- Updated `eslint-plugin-jsdoc` to v4, `eslint-plugin-node` to v8
+- Added [`global-require`](https://eslint.org/docs/rules/global-require)
+- Added [`keyword-spacing`](https://eslint.org/docs/rules/keyword-spacing)
+- Added [`for-direction`](https://eslint.org/docs/rules/for-direction)
+- Added [`getter-return`](https://eslint.org/docs/rules/getter-return)
+- Added [`eslint-plugin-you-dont-need-lodash-underscore`](https://www.npmjs.com/package/eslint-plugin-you-dont-need-lodash-underscore) and `you-dont-need-lodash-underscore:all-warn` ruleset
+
 ## v1.8.1 - 2018.11.20
 
 - Adds whitelist rule for es-syntax to vue.js
