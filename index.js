@@ -118,7 +118,7 @@ module.exports = {
 		],
 
 		// https://eslint.org/docs/rules/global-require
-		'global-require': 1,
+		'global-require': 'error',
 
 		// http://eslint.org/docs/rules/id-length
 		'id-length': [
@@ -205,6 +205,14 @@ module.exports = {
 
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md
 		'node/exports-style': ['error', 'module.exports'],
+
+		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
+		'node/no-deprecated-api': ['error', {
+			ignoreModuleItems: [
+				'url.parse' // https://github.com/nodejs/node/issues/23694
+			],
+			ignoreGlobalItems: []
+		}],
 
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
 		'node/no-unpublished-require': 'off',
