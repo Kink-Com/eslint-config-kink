@@ -2,7 +2,8 @@
 
 module.exports = {
 	extends: [
-		'plugin:node/recommended'
+		'plugin:node/recommended',
+		'plugin:you-dont-need-lodash-underscore/all-warn'
 	],
 	plugins: [
 		'dependencies',
@@ -10,7 +11,8 @@ module.exports = {
 		'mocha',
 		'node',
 		'promise',
-		'security'
+		'security',
+		'you-dont-need-lodash-underscore',
 	],
 	env: {
 		browser: false,
@@ -100,11 +102,23 @@ module.exports = {
 			'always'
 		],
 
+		// https://eslint.org/docs/rules/for-direction
+		'for-direction': 1,
+
 		// http://eslint.org/docs/rules/func-call-spacing
 		'func-call-spacing': [
 			'error',
 			'never'
 		],
+
+		// https://eslint.org/docs/rules/getter-return
+		'getter-return': [
+			'error',
+			{ allowImplicit: true }
+		],
+
+		// https://eslint.org/docs/rules/global-require
+		'global-require': 'error',
 
 		// http://eslint.org/docs/rules/id-length
 		'id-length': [
@@ -143,6 +157,9 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-hyphen-before-param-description
 		// Disabling due to institutional history / preference.
 		'jsdoc/require-hyphen-before-param-description': 0,
+
+		// https://eslint.org/docs/rules/keyword-spacing
+		'keyword-spacing': 0,
 
 		// eslint.org/docs/rules/key-spacing
 		'key-spacing': [
@@ -188,6 +205,14 @@ module.exports = {
 
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md
 		'node/exports-style': ['error', 'module.exports'],
+
+		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
+		'node/no-deprecated-api': ['error', {
+			ignoreModuleItems: [
+				'url.parse' // https://github.com/nodejs/node/issues/23694
+			],
+			ignoreGlobalItems: []
+		}],
 
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
 		'node/no-unpublished-require': 'off',

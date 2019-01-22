@@ -12,6 +12,12 @@ const get = require('lodash/get');
 const has = require('lodash/has');
 const ruleFinder = require('eslint-find-rules')('./index.js');
 
+const eslintRecommendedRules = require('eslint/conf/eslint-recommended').rules;
+const mochaRecommendedRules = require('eslint-plugin-mocha').configs.recommended.rules;
+const nodeRecommendedRules = require('eslint-plugin-node/lib/configs/recommended.json').rules;
+const promiseRecommendedRules = require('eslint-plugin-promise').configs.recommended.rules;
+const securityRecommendedRules = require('eslint-plugin-security').configs.recommended.rules;
+
 // Help.
 if (argv.h === true) {
 	console.log(chalk.underline('ESLint unused rules report'));
@@ -26,13 +32,13 @@ const rows = [];
 const countsByPlugin = {};
 
 const recommendedRules = {
-	eslint: require('eslint/conf/eslint-recommended').rules,
+	eslint: eslintRecommendedRules,
 	// eslint-plugin-dependencies has no recommended.
 	// eslint-plugin-jsdoc has no recommended.
-	mocha: require('eslint-plugin-mocha').configs.recommended.rules,
-	node: require('eslint-plugin-node/lib/configs/recommended.json').rules,
-	promise: require('eslint-plugin-promise').configs.recommended.rules,
-	security: require('eslint-plugin-security').configs.recommended.rules
+	mocha: mochaRecommendedRules,
+	node: nodeRecommendedRules,
+	promise: promiseRecommendedRules,
+	security: securityRecommendedRules,
 };
 
 const unused = ruleFinder.getUnusedRules();
@@ -55,7 +61,7 @@ unused.forEach(rule => {
 
 	if (isPlugin) {
 		// Use plugin homepage.
-		const projectJson = require(`${process.cwd()}/node_modules/eslint-plugin-${plugin}/package.json`);
+		const projectJson = require(`${process.cwd()}/node_modules/eslint-plugin-${plugin}/package.json`); // eslint-disable-line global-require
 		url = projectJson.homepage || '?';
 	}
 
