@@ -1,16 +1,14 @@
-'use strict';
-
 module.exports = {
 	extends: [
 		'kink',
-		'plugin:vue/recommended'
+		'plugin:vue/recommended',
 	],
 	env: {
 		browser: true,
 		jquery: false,
 		mocha: false,
 		mongo: false,
-		node: false
+		node: false,
 	},
 	parserOptions: {
 		sourceType: 'script',
@@ -21,6 +19,6 @@ module.exports = {
 		// `html-indent` does not currently support spaces & since we are all
 		// tabs everywhere, let's keep it that way!
 		'vue/html-indent': 0,
-		'node/no-unsupported-features/es-syntax': 'off'
-	}
+		'node/no-unsupported-features/es-syntax': 'off',
+	},
 };

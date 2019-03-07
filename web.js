@@ -1,15 +1,13 @@
-'use strict';
-
 module.exports = {
 	extends: [
-		'kink'
+		'kink',
 	],
 	env: {
 		browser: true,
 		jquery: true,
 		mocha: true,
 		mongo: false,
-		node: false
+		node: false,
 	},
 	parserOptions: {
 		sourceType: 'script',
@@ -23,15 +21,15 @@ module.exports = {
 			'ads',
 			'banner',
 			'banners',
-			'social'
+			'social',
 		],
 
 		// Whitelisting done for 'alternative promise chains'.
 		'promise/catch-or-return': [
 			'warn',
 			{
-				terminationMethod: ['catch', 'done']
-			}
-		]
-	}
+				terminationMethod: ['catch', 'done'],
+			},
+		],
+	},
 };
