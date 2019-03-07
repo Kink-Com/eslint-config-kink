@@ -1,9 +1,7 @@
-'use strict';
-
 module.exports = {
 	extends: [
 		'plugin:node/recommended',
-		'plugin:you-dont-need-lodash-underscore/all-warn'
+		'plugin:you-dont-need-lodash-underscore/all-warn',
 	],
 	plugins: [
 		'dependencies',
@@ -20,17 +18,18 @@ module.exports = {
 		jquery: false,
 		mocha: true,
 		mongo: true,
-		node: true
+		node: true,
 	},
 	parserOptions: {
-		ecmaVersion: 6
+		ecmaVersion: 6,
+		sourceType: 'module',
 	},
 	rules: {
 		// http://eslint.org/docs/rules/brace-style
 		// https://github.com/airbnb/javascript#blocks--cuddled-elses
 		'brace-style': [
 			'error',
-			'1tbs'
+			'1tbs',
 		],
 
 		// http://eslint.org/docs/rules/camelcase
@@ -38,14 +37,20 @@ module.exports = {
 		camelcase: [
 			'error',
 			{
-				properties: 'always'
-			}
+				properties: 'always',
+			},
 		],
 
 		// http://eslint.org/docs/rules/comma-dangle
 		'comma-dangle': [
 			'error',
-			'only-multiline'
+			{
+				arrays: 'always-multiline',
+				objects: 'always-multiline',
+				imports: 'never',
+				exports: 'never',
+				functions: 'never',
+			},
 		],
 
 		// http://eslint.org/docs/rules/comma-spacing
@@ -53,15 +58,15 @@ module.exports = {
 			'error',
 			{
 				before: false,
-				after: true
-			}
+				after: true,
+			},
 		],
 
 		// http://eslint.org/docs/rules/comma-style
 		// https://github.com/airbnb/javascript#commas--leading-trailing
 		'comma-style': [
 			'error',
-			'last'
+			'last',
 		],
 
 		// https://eslint.org/docs/rules/constructor-super
@@ -70,7 +75,7 @@ module.exports = {
 		// http://eslint.org/docs/rules/curly
 		curly: [
 			'error',
-			'all'
+			'all',
 		],
 
 		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciescase-sensitive
@@ -91,15 +96,15 @@ module.exports = {
 			'warn',
 			{
 				allowKeywords: true,
-				allowPattern: '^[a-z]+(_[a-z]+)+$'
-			}
+				allowPattern: '^[a-z]+(_[a-z]+)+$',
+			},
 		],
 
 		// http://eslint.org/docs/rules/eqeqeq
 		// https://github.com/airbnb/javascript#comparison--eqeqeq
 		eqeqeq: [
 			'error',
-			'always'
+			'always',
 		],
 
 		// https://eslint.org/docs/rules/for-direction
@@ -108,13 +113,13 @@ module.exports = {
 		// http://eslint.org/docs/rules/func-call-spacing
 		'func-call-spacing': [
 			'error',
-			'never'
+			'never',
 		],
 
 		// https://eslint.org/docs/rules/getter-return
 		'getter-return': [
 			'error',
-			{ allowImplicit: true }
+			{ allowImplicit: true },
 		],
 
 		// https://eslint.org/docs/rules/global-require
@@ -124,8 +129,8 @@ module.exports = {
 		'id-length': [
 			'warn',
 			{
-				exceptions: ['e', 'i', 'j', '_', '$']
-			}
+				exceptions: ['e', 'i', 'j', '_', '$'],
+			},
 		],
 
 		// http://eslint.org/docs/rules/indent
@@ -133,8 +138,8 @@ module.exports = {
 			'error',
 			'tab',
 			{
-				SwitchCase: 1
-			}
+				SwitchCase: 1,
+			},
 		],
 
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-param-names
@@ -167,22 +172,22 @@ module.exports = {
 			{
 				beforeColon: false,
 				afterColon: true,
-				mode: 'strict'
-			}
+				mode: 'strict',
+			},
 		],
 
 		// http://eslint.org/docs/rules/linebreak-style
 		'linebreak-style': [
 			'error',
-			'unix'
+			'unix',
 		],
 
 		// http://eslint.org/docs/rules/new-cap
 		'new-cap': [
 			'error',
 			{
-				capIsNew: false
-			}
+				capIsNew: false,
+			},
 		],
 
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/handle-done-callback.md
@@ -209,9 +214,9 @@ module.exports = {
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
 		'node/no-deprecated-api': ['error', {
 			ignoreModuleItems: [
-				'url.parse' // https://github.com/nodejs/node/issues/23694
+				'url.parse', // https://github.com/nodejs/node/issues/23694
 			],
-			ignoreGlobalItems: []
+			ignoreGlobalItems: [],
 		}],
 
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
@@ -301,7 +306,7 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-invalid-regexp
 		'no-invalid-regexp': [
 			'error',
-			{ allowConstructorFlags: ['u', 'y'] }
+			{ allowConstructorFlags: ['u', 'y'] },
 		],
 
 		// https://eslint.org/docs/rules/no-irregular-whitespace
@@ -313,7 +318,7 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
 		'no-mixed-spaces-and-tabs': [
 			'error',
-			'smart-tabs'
+			'smart-tabs',
 		],
 
 		// http://eslint.org/docs/rules/no-multi-spaces
@@ -323,8 +328,10 @@ module.exports = {
 		'no-multiple-empty-lines': [
 			'error',
 			{
-				max: 1
-			}
+				max: 1,
+				maxBOF: 0,
+				maxEOF: 1,
+			},
 		],
 
 		// http://eslint.org/docs/rules/no-new-symbol
@@ -345,21 +352,21 @@ module.exports = {
 		// https://github.com/nodejs/node/blob/8191af5b292aa5d5f07492105781b6cf1d91c42f/.eslintrc.yaml#L104
 		'no-restricted-syntax': [2, {
 			selector: 'CallExpression[callee.name=\'setTimeout\'][arguments.length<2]',
-			message: 'setTimeout() must be invoked with at least two arguments.'
+			message: 'setTimeout() must be invoked with at least two arguments.',
 		}, {
 			selector: 'CallExpression[callee.name=\'setInterval\'][arguments.length<2]',
-			message: 'setInterval() must be invoked with at least 2 arguments.'
+			message: 'setInterval() must be invoked with at least 2 arguments.',
 		}, {
 			selector: 'ThrowStatement > CallExpression[callee.name=/Error$/]',
-			message: 'Use new keyword when throwing an Error.'
+			message: 'Use new keyword when throwing an Error.',
 		}],
 
 		// http://eslint.org/docs/rules/no-self-assign
 		'no-self-assign': [
 			'error',
 			{
-				props: true
-			}
+				props: true,
+			},
 		],
 
 		// https://eslint.org/docs/rules/no-sparse-arrays
@@ -404,8 +411,8 @@ module.exports = {
 				args: 'after-used',
 				caughtErrors: 'all',
 				vars: 'all',
-				varsIgnorePattern: 'should|expect'
-			}
+				varsIgnorePattern: 'should|expect',
+			},
 		],
 
 		// https://eslint.org/docs/rules/no-unexpected-multiline
@@ -420,7 +427,7 @@ module.exports = {
 		// https://eslint.org/docs/rules/object-curly-spacing
 		'object-curly-spacing': [
 			'error',
-			'always'
+			'always',
 		],
 
 		// http://eslint.org/docs/rules/object-shorthand
@@ -431,14 +438,14 @@ module.exports = {
 		// https://github.com/airbnb/javascript#variables--one-const
 		'one-var': [
 			'error',
-			'never'
+			'never',
 		],
 
 		// https://eslint.org/docs/rules/padding-line-between-statements
 		'padding-line-between-statements': [
 			'Error',
 			{ blankLine: 'always', prev: 'directive', next: '*' },
-			{ blankLine: 'never', prev: 'directive', next: 'directive' }
+			{ blankLine: 'never', prev: 'directive', next: 'directive' },
 		],
 
 		// http://eslint.org/docs/rules/prefer-const
@@ -471,7 +478,7 @@ module.exports = {
 		// http://eslint.org/docs/rules/quote-props
 		'quote-props': [
 			'error',
-			'as-needed'
+			'as-needed',
 		],
 
 		// http://eslint.org/docs/rules/require-jsdoc
@@ -482,15 +489,15 @@ module.exports = {
 					FunctionDeclaration: true,
 					MethodDefinition: true,
 					ClassDeclaration: false,
-					ArrowFunctionExpression: false
-				}
-			}
+					ArrowFunctionExpression: false,
+				},
+			},
 		],
 
 		// http://eslint.org/docs/rules/quotes
 		quotes: [
 			'warn',
-			'single'
+			'single',
 		],
 
 		// http://eslint.org/docs/rules/require-yield
@@ -538,7 +545,7 @@ module.exports = {
 		// http://eslint.org/docs/rules/semi
 		semi: [
 			'error',
-			'always'
+			'always',
 		],
 
 		// https://eslint.org/docs/rules/semi-spacing
@@ -547,18 +554,18 @@ module.exports = {
 		// http://eslint.org/docs/rules/spaced-comment
 		'spaced-comment': [
 			'error',
-			'always'
+			'always',
 		],
 
 		// https://eslint.org/docs/rules/space-in-parens
 		'space-in-parens': [
 			'error',
-			'never'
+			'never',
 		],
 
 		// http://eslint.org/docs/rules/space-infix-ops
 		'space-infix-ops': [
-			'error'
+			'error',
 		],
 
 		// http://eslint.org/docs/rules/space-before-blocks
@@ -570,20 +577,20 @@ module.exports = {
 			{
 				anonymous: 'always',
 				named: 'never',
-				asyncArrow: 'ignore'
-			}
+				asyncArrow: 'ignore',
+			},
 		],
 
 		// http://eslint.org/docs/rules/strict
 		strict: [
 			'error',
-			'global'
+			'global',
 		],
 
 		// https://eslint.org/docs/rules/template-curly-spacing
 		'template-curly-spacing': [
 			'error',
-			'never'
+			'never',
 		],
 
 		// http://eslint.org/docs/rules/use-isnan
@@ -599,9 +606,9 @@ module.exports = {
 				requireReturnType: true,
 				// Institutional history / preference.
 				prefer: {
-					return: 'return'
-				}
-			}
+					return: 'return',
+				},
+			},
 		],
 
 		// http://eslint.org/docs/rules/valid-typeof
@@ -610,14 +617,14 @@ module.exports = {
 		// http://eslint.org/docs/rules/wrap-iife
 		'wrap-iife': [
 			'error',
-			'inside'
-		]
+			'inside',
+		],
 	},
 	settings: {
 		jsdoc: {
 			tagNamePreference: {
-				returns: 'return'
-			}
-		}
-	}
+				returns: 'return',
+			},
+		},
+	},
 };

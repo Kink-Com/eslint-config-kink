@@ -2,8 +2,6 @@
 
 /* eslint node/shebang: 0, no-process-exit: 0, security/detect-non-literal-require: 0, no-console: 0 */
 
-'use strict';
-
 const argv = require('minimist')(process.argv.slice(2));
 const chalk = require('chalk');
 const { table } = require('table');

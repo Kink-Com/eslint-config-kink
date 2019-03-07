@@ -1,19 +1,17 @@
-'use strict';
-
 module.exports = {
 	extends: [
-		'kink'
+		'kink',
 	],
 	env: {
 		browser: false,
 		jquery: false,
 		mocha: false,
 		mongo: true,
-		node: true
+		node: true,
 	},
 	rules: {
 		'no-console': 'off',
 		'node/shebang': 'off',
-		'no-process-exit': 'off'
-	}
+		'no-process-exit': 'off',
+	},
 };

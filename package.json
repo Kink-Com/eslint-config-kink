@@ -4,14 +4,14 @@
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {
-    "eslint": "5.12.x",
+    "eslint": "5.15.x",
     "eslint-plugin-dependencies": "2.4.x",
-    "eslint-plugin-jsdoc": "4.0.x",
-    "eslint-plugin-mocha": "5.2.1",
+    "eslint-plugin-jsdoc": "4.1.x",
+    "eslint-plugin-mocha": "5.3.x",
     "eslint-plugin-node": "8.0.x",
     "eslint-plugin-promise": "4.0.x",
     "eslint-plugin-security": "1.4.x",
-    "eslint-plugin-vue": "5.0.0-beta.3",
+    "eslint-plugin-vue": "5.2.x",
     "eslint-plugin-you-dont-need-lodash-underscore": "6.4.x"
   },
   "devDependencies": {
