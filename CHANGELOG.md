@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## v1.10.0 - 2019.03.07
+
+- Set `parserOptions` `sourceType` to `module` in `index` (default), `script` in `vue` and `web`
+- Updated `no-multiple-empty-lines` rule to include `maxBOF` and `maxEOF` options
+- Updated `comma-dangle` to require `always-multiline` for arrays and objects 
+
 ## v1.9.0 - 2019.01.18
 
 - Updated `eslint-plugin-jsdoc` to v4, `eslint-plugin-node` to v8

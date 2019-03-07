@@ -11,8 +11,10 @@ module.exports = {
 		mongo: false,
 		node: false
 	},
+	parserOptions: {
+		sourceType: 'script',
+	},
 	rules: {
-
 		// https://eslint.org/docs/rules/id-blacklist
 		// Added as a step to avoid scripts triggering ad-blockers.
 		'id-blacklist': [

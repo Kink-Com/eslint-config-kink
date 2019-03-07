@@ -12,6 +12,9 @@ module.exports = {
 		mongo: false,
 		node: false
 	},
+	parserOptions: {
+		sourceType: 'script',
+	},
 	rules: {
 		// Conflict with Node 6 and Vue; remove when we upgrade to Node 8.
 		'node/no-unsupported-features': 0,
