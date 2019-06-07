@@ -593,6 +593,17 @@ module.exports = {
 			'never',
 		],
 
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/filename-case.md
+		'unicorn/filename-case': [
+			'warning',
+			{
+				cases: {
+					camelCase: true,
+					pascalCase: true,
+				},
+			},
+		],
+
 		// http://eslint.org/docs/rules/use-isnan
 		'use-isnan': 'error',
 

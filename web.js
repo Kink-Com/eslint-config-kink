@@ -13,6 +13,10 @@ module.exports = {
 		sourceType: 'script',
 	},
 	rules: {
+		// Supporting import statements; revisit when we upgrade to Node 8.
+		'node/no-unsupported-features': 0,
+		'node/no-unsupported-features/es-syntax': 'off',
+
 		// https://eslint.org/docs/rules/id-blacklist
 		// Added as a step to avoid scripts triggering ad-blockers.
 		'id-blacklist': [

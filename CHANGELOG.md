@@ -1,5 +1,12 @@
 # CHANGELOG.md
 
+## v1.11.0 - 2019.06.07
+
+- Added `eslint-plugin-unicorn`
+- Added [`unicorn/filename-case`](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/filename-case.md)
+- Whitelisted incompatible features in `web.js` (babel will handle)
+- Upgraded `eslint`, `eslint-plugin-jsdoc`, `eslint-plugin-promise`, `eslint-plugin-you-dont-need-lodash-underscore`, `table`
+
 ## v1.10.0 - 2019.03.07
 
 - Set `parserOptions` `sourceType` to `module` in `index` (default), `script` in `vue` and `web`
