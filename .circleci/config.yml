@@ -24,7 +24,7 @@ jobs:
   lint:
     working_directory: ~/build
     docker:
-      - image: circleci/node:6.14-stretch
+      - image: circleci/node:8.16-stretch
     steps:
       - checkout
       - attach_workspace:
