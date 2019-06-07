@@ -8,7 +8,7 @@
     "eslint-plugin-dependencies": "2.4.x",
     "eslint-plugin-jsdoc": "7.2.x",
     "eslint-plugin-mocha": "5.3.x",
-    "eslint-plugin-node": "9.1.x",
+    "eslint-plugin-node": "8.0.x",
     "eslint-plugin-promise": "4.1.x",
     "eslint-plugin-security": "1.4.x",
     "eslint-plugin-unicorn": "9.0.x",
