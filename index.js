@@ -10,6 +10,7 @@ module.exports = {
 		'node',
 		'promise',
 		'security',
+		'unicorn',
 		'you-dont-need-lodash-underscore',
 	],
 	env: {
@@ -595,7 +596,7 @@ module.exports = {
 
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/filename-case.md
 		'unicorn/filename-case': [
-			'warning',
+			'warn',
 			{
 				cases: {
 					camelCase: true,
