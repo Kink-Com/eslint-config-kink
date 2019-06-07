@@ -1,7 +1,8 @@
 # CHANGELOG.md
 
-## v1.11.0 - 2019.06.07
+## v2.0.0 - 2019.06.07
 
+- **BREAKING CHANGE** - Removed Node 6 support
 - Added `eslint-plugin-unicorn`
 - Added [`unicorn/filename-case`](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/filename-case.md)
 - Whitelisted incompatible features in `web.js` (babel will handle)

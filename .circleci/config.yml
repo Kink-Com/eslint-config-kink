@@ -2,7 +2,7 @@ version: 2
 jobs:
   npm_install:
     docker:
-      - image: circleci/node:6.14-stretch
+      - image: circleci/node:8.16-stretch
     working_directory: ~/build
     steps:
       - checkout
