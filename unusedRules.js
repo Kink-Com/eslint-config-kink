@@ -12,7 +12,7 @@ const ruleFinder = require('eslint-find-rules')('./index.js');
 
 const eslintRecommendedRules = require('eslint/conf/eslint-recommended').rules;
 const mochaRecommendedRules = require('eslint-plugin-mocha').configs.recommended.rules;
-const nodeRecommendedRules = require('eslint-plugin-node/lib/configs/recommended.json').rules;
+const nodeRecommendedRules = require('eslint-plugin-node/lib/configs/recommended.js').rules;
 const promiseRecommendedRules = require('eslint-plugin-promise').configs.recommended.rules;
 const securityRecommendedRules = require('eslint-plugin-security').configs.recommended.rules;
 

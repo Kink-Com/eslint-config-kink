@@ -1,18 +1,19 @@
 {
   "name": "eslint-config-kink",
-  "version": "1.10.0",
+  "version": "2.0.0",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {
-    "eslint": "5.15.x",
+    "eslint": "5.16.x",
     "eslint-plugin-dependencies": "2.4.x",
-    "eslint-plugin-jsdoc": "4.1.x",
+    "eslint-plugin-jsdoc": "7.2.x",
     "eslint-plugin-mocha": "5.3.x",
-    "eslint-plugin-node": "8.0.x",
-    "eslint-plugin-promise": "4.0.x",
+    "eslint-plugin-node": "9.1.x",
+    "eslint-plugin-promise": "4.1.x",
     "eslint-plugin-security": "1.4.x",
+    "eslint-plugin-unicorn": "9.0.x",
     "eslint-plugin-vue": "5.2.x",
-    "eslint-plugin-you-dont-need-lodash-underscore": "6.4.x"
+    "eslint-plugin-you-dont-need-lodash-underscore": "6.5.x"
   },
   "devDependencies": {
     "chalk": "2.4.x",
@@ -20,7 +21,7 @@
     "lodash": "4.17.x",
     "minimist": "1.2.x",
     "package-json-validator": "0.6.x",
-    "table": "5.2.x"
+    "table": "5.4.x"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,6 @@
   },
   "homepage": "https://github.com/Kink-Com/eslint-config-kink#readme",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   }
 }
