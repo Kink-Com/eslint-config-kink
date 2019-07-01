@@ -22,7 +22,7 @@ module.exports = {
 		node: true,
 	},
 	parserOptions: {
-		ecmaVersion: 6,
+		ecmaVersion: 2017,
 		sourceType: 'module',
 	},
 	rules: {

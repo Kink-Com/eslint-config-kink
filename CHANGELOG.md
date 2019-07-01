@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+## v2.0.1 - 2019.07.01
+
+- Updated `ecmaVersion` to `2017`
+- Upgraded `eslint-plugin-jsdoc`, `eslint-plugin-promise`, `eslint-plugin-unicorn`
+
 ## v2.0.0 - 2019.06.07
 
 - **BREAKING CHANGE** - Removed Node 6 support
