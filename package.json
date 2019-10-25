@@ -1,23 +1,22 @@
 {
   "name": "eslint-config-kink",
-  "version": "2.1.1",
+  "version": "2.1.0",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {
-    "eslint": "5.16.x",
-    "eslint-plugin-dependencies": "2.4.x",
-    "eslint-plugin-jsdoc": "10.0.x",
-    "eslint-plugin-mocha": "5.3.x",
-    "eslint-plugin-node": "9.1.x",
+    "eslint": "6.5.x",
+    "eslint-plugin-jsdoc": "15.12.x",
+    "eslint-plugin-mocha": "6.2.x",
+    "eslint-plugin-node": "10.0.x",
     "eslint-plugin-promise": "4.2.x",
     "eslint-plugin-security": "1.4.x",
-    "eslint-plugin-unicorn": "9.1.x",
+    "eslint-plugin-unicorn": "12.1.x",
     "eslint-plugin-vue": "5.2.x",
-    "eslint-plugin-you-dont-need-lodash-underscore": "6.5.x"
+    "eslint-plugin-you-dont-need-lodash-underscore": "6.8.x"
   },
   "devDependencies": {
     "chalk": "2.4.x",
-    "eslint-find-rules": "3.3.x",
+    "eslint-find-rules": "3.4.x",
     "lodash": "4.17.x",
     "minimist": "1.2.x",
     "package-json-validator": "0.6.x",

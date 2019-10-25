@@ -4,6 +4,8 @@
 
 - Added [`keyword-spacing`](https://eslint.org/docs/rules/keyword-spacing)
 - Added [`prefer-const`](https://eslint.org/docs/rules/prefer-const)
+- Removed [`eslint-plugin-dependencies`](https://www.npmjs.com/package/eslint-plugin-dependencies) ([abandoned](https://github.com/zertosh/eslint-plugin-dependencies/issues/23))
+- Package updates
 
 ## v2.0.1 - 2019.07.01
 

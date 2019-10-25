@@ -4,7 +4,6 @@ module.exports = {
 		'plugin:you-dont-need-lodash-underscore/all-warn',
 	],
 	plugins: [
-		'dependencies',
 		'jsdoc',
 		'mocha',
 		'node',
@@ -78,19 +77,6 @@ module.exports = {
 			'error',
 			'all',
 		],
-
-		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciescase-sensitive
-		'dependencies/case-sensitive': 1,
-
-		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciesno-cycles
-		'dependencies/no-cycles': 1,
-
-		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciesno-unresolved
-		// Duplicates node/no-missing-require
-		'dependencies/no-unresolved': 0,
-
-		// https://www.npmjs.com/package/eslint-plugin-dependencies#dependenciesrequire-json-ext
-		'dependencies/require-json-ext': 1,
 
 		// http://eslint.org/docs/rules/dot-notation
 		'dot-notation': [
