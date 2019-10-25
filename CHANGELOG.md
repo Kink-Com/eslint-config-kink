@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+## v2.1.0 - 2019.10.25
+
+- Added [`keyword-spacing`](https://eslint.org/docs/rules/keyword-spacing)
+- Added [`prefer-const`](https://eslint.org/docs/rules/prefer-const)
+
 ## v2.0.1 - 2019.07.01
 
 - Updated `ecmaVersion` to `2017`

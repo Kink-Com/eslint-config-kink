@@ -165,7 +165,7 @@ module.exports = {
 		'jsdoc/require-hyphen-before-param-description': 0,
 
 		// https://eslint.org/docs/rules/keyword-spacing
-		'keyword-spacing': 0,
+		'keyword-spacing': 1,
 
 		// eslint.org/docs/rules/key-spacing
 		'key-spacing': [
@@ -452,8 +452,7 @@ module.exports = {
 		// http://eslint.org/docs/rules/prefer-const
 		// https://github.com/airbnb/javascript#variables--const
 		// If a variable is never reassigned, using the const declaration is better.
-		// TODO: Turned off for now; revisit.
-		'prefer-const': 'off',
+		'prefer-const': 1,
 
 		// http://eslint.org/docs/rules/prefer-promise-reject-errors
 		'prefer-promise-reject-errors': 'error',
