@@ -30,11 +30,11 @@ jobs:
       - attach_workspace:
           at: ~/build
       - run:
-          command: ./node_modules/.bin/eslint --format junit -o ./coverage/eslint/results.xml .
+          command: npx eslint --format junit -o ./coverage/eslint/results.xml .
           when: always
       - store_test_results:
           path: coverage
-      - run: ./node_modules/.bin/pjv -w -r
+      - run: npx pjv -w -r
 
 workflows:
   version: 2

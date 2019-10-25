@@ -5,7 +5,7 @@
 const argv = require('minimist')(process.argv.slice(2));
 const chalk = require('chalk');
 const { table } = require('table');
-const forEach = require('lodash/forEach');
+const forEach = require('lodash/forEach'); // eslint-disable-line you-dont-need-lodash-underscore/for-each
 const get = require('lodash/get');
 const has = require('lodash/has');
 const ruleFinder = require('eslint-find-rules')('./index.js');
