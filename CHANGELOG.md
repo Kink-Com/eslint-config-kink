@@ -1,5 +1,9 @@
 # CHANGELOG.md
 
+## v2.1.1 - 2019.11.07
+
+- Package updates
+
 ## v2.1.0 - 2019.10.25
 
 - Added [`keyword-spacing`](https://eslint.org/docs/rules/keyword-spacing)

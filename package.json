@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kink",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "dependencies": {
@@ -11,7 +11,7 @@
     "eslint-plugin-promise": "4.2.x",
     "eslint-plugin-security": "1.4.x",
     "eslint-plugin-unicorn": "12.1.x",
-    "eslint-plugin-vue": "5.2.x",
+    "eslint-plugin-vue": "6.0.x",
     "eslint-plugin-you-dont-need-lodash-underscore": "6.8.x"
   },
   "devDependencies": {
