@@ -209,6 +209,9 @@ module.exports = {
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
 		'node/no-unpublished-require': 'off',
 
+		// https://eslint.org/docs/rules/no-async-promise-executor
+		'no-async-promise-executor': 'error',
+
 		// http://eslint.org/docs/rules/no-alert
 		'no-alert': 'error',
 
@@ -302,6 +305,9 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-inner-declarations
 		'no-inner-declarations': [ 'warn', 'both' ],
 
+		// https://eslint.org/docs/rules/no-misleading-character-class
+		'no-misleading-character-class': 'error',
+
 		// http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
 		'no-mixed-spaces-and-tabs': [
 			'error',
@@ -330,6 +336,9 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-octal
 		'no-octal': 'error',
 
+		// https://eslint.org/docs/rules/no-prototype-builtins
+		'no-prototype-builtins': 'error',
+
 		// http://eslint.org/docs/rules/no-redeclare
 		'no-redeclare': 'error',
 
@@ -356,6 +365,9 @@ module.exports = {
 			},
 		],
 
+		// https://eslint.org/docs/rules/no-shadow-restricted-names
+		'no-shadow-restricted-names': 'error',
+
 		// https://eslint.org/docs/rules/no-sparse-arrays
 		'no-sparse-arrays': 'error',
 
@@ -364,10 +376,6 @@ module.exports = {
 
 		// https://eslint.org/docs/rules/no-throw-literal
 		'no-throw-literal': 'error',
-
-		// http://eslint.org/docs/rules/no-var
-		// https://github.com/airbnb/javascript#references--disallow-var
-		'no-var': 'error',
 
 		// http://eslint.org/docs/rules/no-undef
 		// https://github.com/airbnb/javascript#variables--const
@@ -382,14 +390,18 @@ module.exports = {
 		// http://eslint.org/docs/rules/no-unreachable
 		'no-unreachable': 'error',
 
-		// http://eslint.org/docs/rules/no-unused-labels
-		'no-unused-labels': 'error',
+		// https://eslint.org/docs/rules/no-useless-catch
+		// @todo revisit
+		'no-useless-catch': 'off',
 
 		// http://eslint.org/docs/rules/no-useless-escape
 		'no-useless-escape': 'error',
 
 		// http://eslint.org/docs/rules/no-useless-return
 		'no-useless-return': 'error',
+
+		// http://eslint.org/docs/rules/no-unused-labels
+		'no-unused-labels': 'error',
 
 		// http://eslint.org/docs/rules/no-unused-vars
 		'no-unused-vars': [
@@ -407,6 +419,13 @@ module.exports = {
 
 		// https://eslint.org/docs/rules/no-unsafe-finally
 		'no-unsafe-finally': 'error',
+
+		// http://eslint.org/docs/rules/no-var
+		// https://github.com/airbnb/javascript#references--disallow-var
+		'no-var': 'error',
+
+		// https://eslint.org/docs/rules/no-with
+		'no-with': 'error',
 
 		// http://eslint.org/docs/rules/no-void
 		'no-void': 'error',
