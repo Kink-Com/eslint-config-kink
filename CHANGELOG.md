@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## v2.0.0 - 2020.01.30
+
+- Added [`no-async-promise-executor`](https://eslint.org/docs/rules/no-async-promise-executor)
+- Added [`no-misleading-character-class`](https://eslint.org/docs/rules/no-misleading-character-class)
+- Added [`no-prototype-builtins`](https://eslint.org/docs/rules/no-prototype-builtins)
+- Added [`no-shadow-restricted-names`](https://eslint.org/docs/rules/no-shadow-restricted-names)
+- Added [`no-with`](https://eslint.org/docs/rules/no-with)
+- Package updates
+
 ## v2.1.1 - 2019.11.07
 
 - Package updates
