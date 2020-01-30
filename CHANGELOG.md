@@ -1,6 +1,6 @@
 # CHANGELOG.md
 
-## v2.0.0 - 2020.01.30
+## v2.2.0 - 2020.01.30
 
 - Added [`no-async-promise-executor`](https://eslint.org/docs/rules/no-async-promise-executor)
 - Added [`no-misleading-character-class`](https://eslint.org/docs/rules/no-misleading-character-class)
