@@ -1,5 +1,8 @@
 # CHANGELOG.md
 
+## v2.2.1 - 2020.02.05
+- Remove `parserOptions` config from vue.js
+
 ## v2.2.0 - 2020.01.30
 
 - Added [`no-async-promise-executor`](https://eslint.org/docs/rules/no-async-promise-executor)
@@ -37,7 +40,7 @@
 
 - Set `parserOptions` `sourceType` to `module` in `index` (default), `script` in `vue` and `web`
 - Updated `no-multiple-empty-lines` rule to include `maxBOF` and `maxEOF` options
-- Updated `comma-dangle` to require `always-multiline` for arrays and objects 
+- Updated `comma-dangle` to require `always-multiline` for arrays and objects
 - Updated `eslint` to `5.15.x`, `eslint-plugin-jsdoc` to `4.1.x`, `eslint-plugin-mocha` to `5.3.x`, `eslint-plugin-vue` to `5.2.x`
 
 ## v1.9.0 - 2019.01.18

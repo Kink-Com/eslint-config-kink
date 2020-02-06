@@ -30,7 +30,7 @@ In the project root, add/replace any `.eslintrc.*` file with a single `.eslintrc
 ### Console
 
 For console-based applications, such as migrations, CLI utilities and so forth, add `/.eslintrc.json` in the target directories with the following:
-                                                                                
+
 ```javascript
 {
   "extends": "kink/console"
@@ -73,6 +73,12 @@ To execute ESLint directly:
 
 ```bash
 ./node_modules/.bin/eslint .
+```
+
+To execute ESLint directly in a project with Vue:
+
+```bash
+./node_modules/.bin/eslint --ext .js,.vue .
 ```
 
 ## Development
