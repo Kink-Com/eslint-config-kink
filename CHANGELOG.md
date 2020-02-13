@@ -1,6 +1,11 @@
 # CHANGELOG.md
 
+## v2.2.2 - 2020.02.13
+
+- Prepared for public release.
+
 ## v2.2.1 - 2020.02.05
+
 - Remove `parserOptions` config from vue.js
 
 ## v2.2.0 - 2020.01.30

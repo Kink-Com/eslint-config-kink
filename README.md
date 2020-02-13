@@ -2,6 +2,8 @@
 
 Kink.com [ESLint](http://eslint.org/) standards.
 
+These rules have developed internally and adopted through consensus during our regularly scheduled development meetings.
+
 ## Installation within a project
 
 [Uninstall ESLint globally](https://github.com/eslint/eslint/issues/1877).
@@ -72,13 +74,13 @@ See http://eslint.org/docs/user-guide/integrations to determine how to best conf
 To execute ESLint directly:
 
 ```bash
-./node_modules/.bin/eslint .
+npx eslint .
 ```
 
 To execute ESLint directly in a project with Vue:
 
 ```bash
-./node_modules/.bin/eslint --ext .js,.vue .
+npx eslint --ext .js,.vue .
 ```
 
 ## Development
