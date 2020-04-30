@@ -10,7 +10,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "4.2.x",
     "eslint-plugin-security": "1.4.x",
-    "eslint-plugin-unicorn": "^19.0.1",
+    "eslint-plugin-unicorn": "^15.0.1",
     "eslint-plugin-vue": "^6.1.2",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.10.0"
   },
