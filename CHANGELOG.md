@@ -4,7 +4,6 @@
 
 - Updating `ecmaVersion` to `2019`
 - Updating dependency `eslint-plugin-jsdoc` to latest
-- Updating dependency `eslint-plugin-unicorn` to latest
 - Updating dependency `chalk` to latest
 
 ## v2.2.2 - 2020.02.13
