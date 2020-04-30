@@ -51,6 +51,6 @@
   },
   "homepage": "https://github.com/Kink-Com/eslint-config-kink#readme",
   "engines": {
-    "node": ">=8"
+    "node": ">=8.17"
   }
 }
