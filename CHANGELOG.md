@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## v2.3.0 - 2020.04.30
+
+- Updating `ecmaVersion` to `2018`
+- Updating dependency `eslint-plugin-jsdoc` to latest
+- Updating dependency `chalk` to latest
+
 ## v2.2.2 - 2020.02.13
 
 - Prepared for public release.
