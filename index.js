@@ -115,6 +115,7 @@ module.exports = {
 		// https://eslint.org/docs/rules/id-denylist
 		// https://cnemedia.atlassian.net/browse/KIN-11957
 		'id-denylist': [
+			'error',
 			'whitelist',
 			'blacklist',
 			'sanity',
