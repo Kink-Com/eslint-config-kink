@@ -1,5 +1,9 @@
 # CHANGELOG.md
 
+## v2.3.1 - 2020.07.08
+
+- Added [`id-denylist`](https://eslint.org/docs/rules/id-denylist)
+
 ## v2.3.0 - 2020.04.30
 
 - Updating `ecmaVersion` to `2018`

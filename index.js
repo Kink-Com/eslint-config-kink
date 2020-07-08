@@ -112,6 +112,14 @@ module.exports = {
 		// https://eslint.org/docs/rules/global-require
 		'global-require': 'error',
 
+		// https://eslint.org/docs/rules/id-denylist
+		// https://cnemedia.atlassian.net/browse/KIN-11957
+		'id-denylist': [
+			'whitelist',
+			'blacklist',
+			'sanity',
+			'dummy',
+		],
 		// http://eslint.org/docs/rules/id-length
 		'id-length': [
 			'warn',
