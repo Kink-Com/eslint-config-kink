@@ -6,7 +6,7 @@
 - Added [`mocha/no-global-tests`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-global-tests.md)
 - Added [`mocha/no-identical-title`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-identical-title.md)
 - Added [`mocha/no-nested-tests`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-nested-tests.md)
-- Added [`mocha/no-setup-in-describe`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-setup-in-describe.md)
+- Explicitly turned off [`mocha/no-setup-in-describe`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-setup-in-describe.md) (technically correct, but impractical given the size of our codebase)
 - Turned off [`you-dont-need-lodash-underscore/omit`](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_omit) (impractical)
 - Added [`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat) to `web`
 - Package updates

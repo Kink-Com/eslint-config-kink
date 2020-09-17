@@ -202,7 +202,9 @@ module.exports = {
 		'mocha/no-return-and-callback': 'error',
 
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-setup-in-describe.md
-		'mocha/no-setup-in-describe': 'error',
+		// A good rule, but we're not experiencing the problems it's supposed to avoid and fixing would require
+		// some tedious manual refactoring.
+		'mocha/no-setup-in-describe': 'off',
 
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-sibling-hooks.md
 		'mocha/no-sibling-hooks': 'error',
