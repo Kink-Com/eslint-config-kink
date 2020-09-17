@@ -5,22 +5,23 @@
   "main": "index.js",
   "dependencies": {
     "eslint": "^6.8.0",
-    "eslint-plugin-jsdoc": "^24.0.0",
-    "eslint-plugin-mocha": "^6.2.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "4.2.x",
-    "eslint-plugin-security": "1.4.x",
+    "eslint-plugin-compat": "^3.8.0",
+    "eslint-plugin-jsdoc": "^27.1.2",
+    "eslint-plugin-mocha": "^6.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-unicorn": "^15.0.1",
     "eslint-plugin-vue": "^6.1.2",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.10.0"
   },
   "devDependencies": {
-    "chalk": "^4.0.0",
-    "eslint-find-rules": "3.4.x",
-    "lodash": "4.17.x",
-    "minimist": "1.2.x",
+    "chalk": "^4.1.0",
+    "eslint-find-rules": "^3.6.1",
+    "lodash": "^4.17.20",
+    "minimist": "^1.2.5",
     "package-json-validator": "0.6.x",
-    "table": "5.4.x"
+    "table": "^6.0.3"
   },
   "repository": {
     "type": "git",
