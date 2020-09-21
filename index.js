@@ -180,14 +180,31 @@ module.exports = {
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/handle-done-callback.md
 		'mocha/handle-done-callback': 'error',
 
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-async-describe.md
+		'mocha/no-async-describe': 'error',
+
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md
 		'mocha/no-exclusive-tests': 'error',
+
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-global-tests.md
+		'mocha/no-global-tests': 'error',
+
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-identical-title.md
+		'mocha/no-identical-title': 'error',
+
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-nested-tests.md
+		'mocha/no-nested-tests': 'error',
 
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-pending-tests.md
 		'mocha/no-pending-tests': 'error',
 
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-return-and-callback.md
 		'mocha/no-return-and-callback': 'error',
+
+		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-setup-in-describe.md
+		// A good rule, but we're not experiencing the problems it's supposed to avoid and fixing would require
+		// some tedious manual refactoring.
+		'mocha/no-setup-in-describe': 'off',
 
 		// https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-sibling-hooks.md
 		'mocha/no-sibling-hooks': 'error',
@@ -635,6 +652,10 @@ module.exports = {
 			'error',
 			'inside',
 		],
+
+		// https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_omit
+		// Workaround is impractical.
+		'you-dont-need-lodash-underscore/omit': 'off',
 	},
 	settings: {
 		jsdoc: {

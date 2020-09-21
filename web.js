@@ -1,6 +1,7 @@
 module.exports = {
 	extends: [
 		'kink',
+		'plugin:compat/recommended',
 	],
 	env: {
 		browser: true,
