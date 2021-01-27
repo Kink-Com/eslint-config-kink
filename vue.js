@@ -18,4 +18,10 @@ module.exports = {
 		// tabs everywhere, let's keep it that way!
 		'vue/html-indent': 0,
 	},
+	plugins: [
+		'jsdoc-vuejs',
+	],
+	source: {
+		includePattern: '\\.(vue|js)$',
+	},
 };
