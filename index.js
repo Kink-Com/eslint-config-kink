@@ -215,6 +215,12 @@ module.exports = {
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md
 		'node/exports-style': ['error', 'module.exports'],
 
+		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/callback-return.md
+		'node/callback-return': 'error',
+
+		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/handle-callback-err.md
+		'node/handle-callback-err': 'warn',
+
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
 		'node/no-deprecated-api': ['error', {
 			ignoreModuleItems: [
