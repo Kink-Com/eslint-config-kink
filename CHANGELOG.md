@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## v2.5.0 - 2021.02.18
+
+- Added [`node/callback-return`](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/callback-return.md)
+- Added [`node/handle-callback-err`](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/handle-callback-err.md)
+- Package updates
+
 ## v2.4.0 - 2020.09.17
 
 - Added [`mocha/no-async-describe`](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-async-describe.md)
