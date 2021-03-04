@@ -659,9 +659,10 @@ module.exports = {
 			'inside',
 		],
 
-		// https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_omit
-		// Workaround is impractical.
+		// Workarounds are impractical.
+		'you-dont-need-lodash-underscore/get': 'off',
 		'you-dont-need-lodash-underscore/omit': 'off',
+		'you-dont-need-lodash-underscore/uniq': 'off',
 	},
 	settings: {
 		jsdoc: {

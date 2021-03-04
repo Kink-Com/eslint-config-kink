@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+## v2.5.1 - 2021.03.04
+
+- Disabled `you-dont-need-lodash-underscore/get`
+- Disabled `you-dont-need-lodash-underscore/uniq`
+
 ## v2.5.0 - 2021.02.18
 
 - Added [`node/callback-return`](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/callback-return.md)
