@@ -53,10 +53,11 @@ module.exports = {
 			},
 		],
 
+		"arrow-parens": 0,
+		"no-tabs": 0,
 		"eslint-plugin/consistent-output": 0,
 		"eslint-plugin/require-meta-schema": 0,
 		"eslint-plugin/require-meta-type": 0,
 		"react/jsx-props-no-spreading": 0,
-		"no-tabs": 0,
 	},
 };
