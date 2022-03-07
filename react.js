@@ -14,7 +14,7 @@ module.exports = {
 		sourceType: "script",
 	},
 	rules: {
-		indent: ["error", 4],
+		indent: [2, "tab"],
 		"comma-dangle": [2, "always-multiline"],
 		"object-shorthand": [
 			2,
@@ -57,5 +57,6 @@ module.exports = {
 		"eslint-plugin/require-meta-schema": 0,
 		"eslint-plugin/require-meta-type": 0,
 		"react/jsx-props-no-spreading": 0,
+		"no-tabs": 0,
 	},
 };
