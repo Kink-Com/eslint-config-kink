@@ -1,11 +1,6 @@
 module.exports = {
-	extends: [
-		"plugin:compat/recommended",
-		"plugin:eslint-plugin/recommended",
-		"airbnb",
-		"airbnb/hooks",
-	],
-	plugins: ["eslint-plugin"],
+	extends: ["airbnb", "airbnb/hooks"],
+	plugins: [],
 	env: {
 		es6: true,
 		node: true,
