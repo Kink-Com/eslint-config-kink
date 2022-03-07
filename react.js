@@ -4,6 +4,7 @@ module.exports = {
 	env: {
 		es6: true,
 		node: true,
+		browser: true,
 	},
 	parserOptions: {
 		ecmaVersion: 6,
@@ -13,6 +14,7 @@ module.exports = {
 		sourceType: "script",
 	},
 	rules: {
+		indent: ["error", 4],
 		"comma-dangle": [2, "always-multiline"],
 		"object-shorthand": [
 			2,
@@ -41,13 +43,6 @@ module.exports = {
 		"function-paren-newline": 0,
 		"no-plusplus": 1,
 		"no-param-reassign": 1,
-		"no-restricted-syntax": [
-			2,
-			{
-				selector: "ObjectPattern",
-				message: "Object destructuring is not compatible with Node v4",
-			},
-		],
 		strict: [2, "safe"],
 		"valid-jsdoc": [
 			2,
@@ -61,5 +56,6 @@ module.exports = {
 		"eslint-plugin/consistent-output": 0,
 		"eslint-plugin/require-meta-schema": 0,
 		"eslint-plugin/require-meta-type": 0,
+		"react/jsx-props-no-spreading": 0,
 	},
 };
