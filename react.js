@@ -15,6 +15,9 @@ module.exports = {
 	},
 	rules: {
 		indent: [2, "tab"],
+		"prettier/prettier": "error",
+		"react/jsx-uses-vars": "error",
+		"react/prop-types": ["error", { ignore: ["children"] }],
 		"comma-dangle": [2, "always-multiline"],
 		"object-shorthand": [
 			2,
@@ -54,10 +57,15 @@ module.exports = {
 		],
 
 		"arrow-parens": 0,
-		"no-tabs": 0,
+		"class-methods-use-this": 0,
 		"eslint-plugin/consistent-output": 0,
 		"eslint-plugin/require-meta-schema": 0,
 		"eslint-plugin/require-meta-type": 0,
+		"global-require": 0,
+		"import/no-extraneous-dependencies": 0,
+		"import/prefer-default-export": 0,
+		"no-mixed-operators": 0,
+		"no-tabs": 0,
 		"react/jsx-props-no-spreading": 0,
 	},
 };
