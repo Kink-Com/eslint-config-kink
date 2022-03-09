@@ -1,17 +1,18 @@
 module.exports = {
-	extends: ["airbnb", "airbnb/hooks"],
-	plugins: [],
+	extends: ["prettier", "airbnb", "airbnb/hooks"],
+	plugins: ["prettier"],
 	env: {
-		es6: true,
+		es2022: true,
 		node: true,
 		browser: true,
+		jest: true,
 	},
 	parserOptions: {
-		ecmaVersion: 6,
+		ecmaVersion: 12,
 		ecmaFeatures: {
 			jsx: true,
 		},
-		sourceType: "script",
+		sourceType: "module",
 	},
 	rules: {
 		indent: [2, "tab"],
@@ -24,7 +25,7 @@ module.exports = {
 			"always",
 			{
 				ignoreConstructors: false,
-				avoidQuotes: false, // this is the override vs airbnb
+				avoidQuotes: false, // force to use ":" if the fuction name is in Quotes ex: "bar-baz": fucntions (){}
 			},
 		],
 		"max-len": [
