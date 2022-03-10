@@ -18,7 +18,6 @@ module.exports = {
 		"prettier/prettier": "error",
 		"react/jsx-uses-vars": "error",
 		"react/prop-types": ["error", { ignore: ["children"] }],
-		"comma-dangle": [2, "always-multiline"],
 		"object-shorthand": [
 			2,
 			"always",
