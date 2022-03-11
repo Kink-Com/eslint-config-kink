@@ -66,5 +66,6 @@ module.exports = {
 		"no-mixed-operators": 0,
 		"no-tabs": 0,
 		"react/jsx-props-no-spreading": 0,
+		"react/require-default-props": 0,
 	},
 };
