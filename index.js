@@ -39,16 +39,16 @@ module.exports = {
 		],
 
 		// http://eslint.org/docs/rules/comma-dangle
-		// 'comma-dangle': [
-		// 	'error',
-		// 	{
-		// 		arrays: 'always-multiline',
-		// 		objects: 'always-multiline',
-		// 		imports: 'never',
-		// 		exports: 'never',
-		// 		functions: 'never',
-		// 	},
-		// ],
+		"comma-dangle": [
+			"error",
+			{
+				arrays: "always-multiline",
+				objects: "always-multiline",
+				imports: "never",
+				exports: "never",
+				functions: "never",
+			},
+		],
 
 		// http://eslint.org/docs/rules/comma-spacing
 		"comma-spacing": [

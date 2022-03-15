@@ -1,6 +1,6 @@
 module.exports = {
-	extends: ["airbnb", "airbnb/hooks", "prettier"],
-	plugins: ["prettier"],
+	extends: ["airbnb", "airbnb/hooks"],
+	plugins: [],
 	env: {
 		es6: true,
 		browser: true,
@@ -15,7 +15,6 @@ module.exports = {
 	},
 	rules: {
 		indent: [2, "tab"],
-		"prettier/prettier": "error",
 		"react/jsx-uses-vars": "error",
 		"react/prop-types": ["error", { ignore: ["children"] }],
 		"object-shorthand": [
