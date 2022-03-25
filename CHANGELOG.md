@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+## v2.6.0 - 2021.03.25
+
+- Added react.js file
+- Upgraded `eslint`, `eslint-plugin-unicorn`
+
 ## v2.5.1 - 2021.03.04
 
 - Disabled `you-dont-need-lodash-underscore/get`
@@ -179,7 +184,6 @@
 
 - Added http://eslint.org/docs/rules/id-blacklist to `web.js`
 
-
 ## v1.3.1 - 2017.12.15
 
 - Added [`promise/catch-or-return`](https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/catch-or-return.md) to `web.js`
@@ -188,94 +192,92 @@
 
 - Updated
   - index.js
-     - eslint-plugin-mocha
-     - eslint-plugin-node
-     - additional rules regarding promises
+    - eslint-plugin-mocha
+    - eslint-plugin-node
+    - additional rules regarding promises
 
 ## v1.2.1 - 2017.09.19
 
-  - Updated
-    - package.json
-      - version and dependencies
+- Updated
+  - package.json
+    - version and dependencies
 
 ## v1.2.0 - 2017.09.19
 
-  - Updated
-    - index.js
-      - 'promise/no-return-wrap': 'off',
-    - package.json
-      - version and dependencies
+- Updated
+  - index.js
+    - 'promise/no-return-wrap': 'off',
+  - package.json
+    - version and dependencies
 
 ## v1.1.0 - 2017.08.31
 
-  - Added
-    - .eslintrc.json
-    - .travis.yml
+- Added
 
-  - Updated
-    - index.js
-        - no-com-are-neg-zero
-        - no-extra-semi
-        - padding-line-between-statements
-        - semi-spacing
+  - .eslintrc.json
+  - .travis.yml
 
-    - package.json
-       - version and dependencies
+- Updated
+
+  - index.js
+
+    - no-com-are-neg-zero
+    - no-extra-semi
+    - padding-line-between-statements
+    - semi-spacing
+
+  - package.json
+    - version and dependencies
 
 ## v1.0.17 - 2017.08.10
 
-  - Updated
-    - package.json
-    - web.js
+- Updated
+  - package.json
+  - web.js
 
 ## v1.0.16 - 2017.07.25
 
-  - Updated
-    - Readme.md
-      - Removing reference to yarn
+- Updated
+  - Readme.md
+    - Removing reference to yarn
 
 ## v1.0.15
 
-  - Updated
-    - index.js
-      - promise rules
+- Updated
 
-    - package.json
-      - version increase
+  - index.js
+
+    - promise rules
+
+  - package.json
+    - version increase
 
 ## v1.0.14 - 2017.06.01
 
-  - Updated
-    - README.md
-      - Yarn reference removed
+- Updated
 
-    - index.js
-      - promise rules added
+  - README.md
 
-    - package.json
-      - version and dependencies
+    - Yarn reference removed
+
+  - index.js
+
+    - promise rules added
+
+  - package.json
+    - version and dependencies
 
 ## v1.0.13 - 2017.05.13
 
-  -Updated
-    - index.js
-      - no-empty-pattern
-      - no-self-assign
-      - no-useless-return
-    - package.json
-      - version increase
+-Updated - index.js - no-empty-pattern - no-self-assign - no-useless-return - package.json - version increase
 
 ## v1.0.12 - 2017.05.04
-  -Updated
-    - package.json
-      - version increase
+
+-Updated - package.json - version increase
 
 ## v1.0.11 - 2017.03.31
 
-  -Updated
-    - added variable name min length with exceptions (warning)
-    - package.json
-      - version increase
+-Updated - added variable name min length with exceptions (warning) - package.json - version increase
 
 THERE BE DRAGONS HERE
 
