@@ -1,8 +1,5 @@
 module.exports = {
-	extends: [
-		'kink',
-		'plugin:compat/recommended',
-	],
+	extends: ["kink", "plugin:compat/recommended"],
 	env: {
 		browser: true,
 		jquery: true,
@@ -11,29 +8,29 @@ module.exports = {
 		node: false,
 	},
 	parserOptions: {
-		sourceType: 'script',
+		sourceType: "script",
 	},
 	rules: {
 		// Supporting import statements; revisit when we upgrade to Node 8.
-		'node/no-unsupported-features': 0,
-		'node/no-unsupported-features/es-syntax': 'off',
+		"node/no-unsupported-features": 0,
+		"node/no-unsupported-features/es-syntax": "off",
 
 		// https://eslint.org/docs/rules/id-blacklist
 		// Added as a step to avoid scripts triggering ad-blockers.
-		'id-blacklist': [
+		"id-blacklist": [
 			2, // This indicates severity, NOT a blacklisted value.
-			'ad',
-			'ads',
-			'banner',
-			'banners',
-			'social',
+			"ad",
+			"ads",
+			"banner",
+			"banners",
+			"social",
 		],
 
 		// Whitelisting done for 'alternative promise chains'.
-		'promise/catch-or-return': [
-			'warn',
+		"promise/catch-or-return": [
+			"warn",
 			{
-				terminationMethod: ['catch', 'done'],
+				terminationMethod: ["catch", "done"],
 			},
 		],
 	},
