@@ -40,6 +40,21 @@ ruleTester.run('controller-context', Rule, {
 			`,
 			filename,
 		},
+		{
+			code: `
+				const path = require('path');
+				module.exports = async function MyController(request, response) {
+					const result = {
+						data: {
+							foo: 'bar',
+						},
+					};
+
+					return response.render('index', result);
+				};
+			`,
+			filename,
+		}
 	],
 	invalid: [
 		{
@@ -80,6 +95,43 @@ ruleTester.run('controller-context', Rule, {
 				},
 			],
 			filename,
-		}
+		},
+		{
+			code: `
+			const moment = require('moment');
+
+/**
+ * Retrieve page containing report form
+ *
+ * @param {object} _ express request object
+ * @param {object} response express response object
+ */
+const getReportPage = async (_, response) => {
+	// Don't add cache control headers as we're printing the user email and
+	// username in the form elements. This could (in theory) lead to some privacy concerns
+	response.set('X-Robots-Tag', 'noindex');
+
+	const renderData = {
+		date: moment().format('MM/DD/YYYY'),
+		pageTitle: 'Report a Concern',
+		section: 'report',
+		sectionType: 'report',
+	};
+
+	// Add reCaptcha
+	response.locals.recaptcha = true;
+
+	return response.render('report', renderData);
+};
+
+module.exports = getReportPage;`,
+			errors: [
+				{
+					message: MESSAGE,
+					type: 'ObjectExpression',
+				},
+			],
+			filename,
+		},
 	]
 });

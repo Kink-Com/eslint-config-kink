@@ -1,6 +1,7 @@
 const path = require('path');
 
 const CONTROLLER_ERROR_MESSAGE = 'Controllers must follow expected format. (See Notion)';
+const CONTROLLER_EXPORTS_ERROR_MESSAGE = 'Controllers must export a single async named function. (See Notion)';
 
 /**
  * Enforce specific export format for controllers
@@ -22,24 +23,43 @@ module.exports = {
 
 		// Title Case the filename (first letter as well), fixing any snake_case or kebab-case
 		const expectedFunctionName = filename.replace(/[-_](.)/g, (_, c) => c.toUpperCase()).replace(/^./, c => c.toUpperCase());
+		const commonErrorMessage = `Controllers must export a single async named function. (\`module.exports = async function ${expectedFunctionName}(request, response) { }\`)`;
+
+		let moduleExportCount = 0;
 
 		return {
+			Program: function () {
+				moduleExportCount = 0; // Reset for each file
+			},
+			'Program:exit': function () {
+				if (moduleExportCount > 1) {
+					context.report({
+						loc: { line: 1, column: 0 }, // Generic report location at the start
+						message: CONTROLLER_EXPORTS_ERROR_MESSAGE,
+					});
+				}
+			},
 			AssignmentExpression(node) {
 				const exportNode = node.right;
 
+				// Not a module.exports assignment
 				if (node.left.type !== 'MemberExpression' || node.left.object.name !== 'module' || node.left.property.name !== 'exports') {
-					context.report({
-						node: exportNode,
-						message: `Controllers must export a single async named function. (\`module.exports = async function ${expectedFunctionName}(request, response) { }\`)`,
-					});
+					if (node.left.object.name == undefined && node.left.object.object.name === 'module') {
+						context.report({
+							node: exportNode,
+							message: commonErrorMessage
+						});
+					}
 
 					return;
 				}
 
+				moduleExportCount++;
+
 				if (exportNode.type !== 'FunctionExpression' && exportNode.type !== 'ArrowFunctionExpression') {
 					context.report({
 						node: exportNode,
-						message: `Controllers must export a single async named function. (\`module.exports = async function ${expectedFunctionName}(request, response) { }\`)`,
+						message: commonErrorMessage
 					});
 
 					return;

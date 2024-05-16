@@ -117,7 +117,6 @@ ruleTester.run('controller-exports', Rule, {
 			errors: [
 				{
 					message: `Controllers must export a single async named function. (\`module.exports = async function MyController(request, response) { }\`)`,
-					type: 'FunctionExpression',
 				},
 			],
 			filename,
@@ -142,6 +141,60 @@ ruleTester.run('controller-exports', Rule, {
 				},
 			],
 			filename,
-		}
-	]
+		},
+		{
+			code: `
+				module.exports = async function MyController(request, response) { };
+				module.exports.fooBar = async function FooBar(request, response) { };
+			`,
+			output: `
+				module.exports = async function MyController(request, response) { };
+				module.exports.fooBar = async function FooBar(request, response) { };
+			`,
+			errors: [
+				{
+					message: `Controllers must export a single async named function. (\`module.exports = async function MyController(request, response) { }\`)`,
+					type: 'FunctionExpression',
+				},
+			],
+			filename,
+		},
+		{
+			code: `
+			const moment = require('moment');
+
+/**
+ * Retrieve page containing report form
+ *
+ * @param {object} _ express request object
+ * @param {object} response express response object
+ */
+const getReportPage = async (_, response) => {
+	// Don't add cache control headers as we're printing the user email and
+	// username in the form elements. This could (in theory) lead to some privacy concerns
+	response.set('X-Robots-Tag', 'noindex');
+
+	const renderData = {
+		date: moment().format('MM/DD/YYYY'),
+		pageTitle: 'Report a Concern',
+		section: 'report',
+		sectionType: 'report',
+	};
+
+	// Add reCaptcha
+	response.locals.recaptcha = true;
+
+	return response.render('report', renderData);
+};
+
+module.exports = getReportPage;`,
+			errors: [
+				{
+					message: `Controllers must export a single async named function. (\`module.exports = async function MyController(request, response) { }\`)`,
+					type: 'Identifier',
+				},
+			],
+			filename,
+		},
+	],
 });
