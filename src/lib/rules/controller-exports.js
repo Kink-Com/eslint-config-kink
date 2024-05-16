@@ -44,7 +44,12 @@ module.exports = {
 
 				// Not a module.exports assignment
 				if (node.left.type !== 'MemberExpression' || node.left.object.name !== 'module' || node.left.property.name !== 'exports') {
-					if (node.left.object.name == undefined && node.left.object.object.name === 'module') {
+					if (
+						node.left.object &&
+						node.left.object.name == undefined &&
+						node.left.object.object &&
+						node.left.object.object.name === 'module'
+					) {
 						context.report({
 							node: exportNode,
 							message: commonErrorMessage

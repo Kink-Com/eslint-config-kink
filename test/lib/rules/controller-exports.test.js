@@ -45,6 +45,39 @@ ruleTester.run('controller-exports', Rule, {
 	],
 	invalid: [
 		{
+			code: `
+			/**
+			 * Renders the email confirmation change page
+			 *
+			 * @param  {object} request express request object
+			 * @param  {object} response express response object
+			 */
+			const changeEmailConfirmGet = (request, response) => {
+				let params = {};
+
+				if (request.query.token) {
+					params = {
+						member: request.session.member,
+						identToken: request.query.token,
+						pageTitle: 'Confirm Email Change',
+					};
+					response.render('./account/change-email-confirm', params);
+				} else {
+					response.redirect('/');
+				}
+			};
+
+			module.exports = changeEmailConfirmGet;
+			`,
+			errors: [
+				{
+					message: `Controllers must export a single async named function. (\`module.exports = async function MyController(request, response) { }\`)`,
+					type: 'Identifier',
+				},
+			],
+			filename,
+		},
+		{
 			code: `module.exports = function MyController(request, response) { }`,
 			output: `module.exports = async function MyController(request, response) { }`,
 			errors: [
