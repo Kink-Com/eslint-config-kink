@@ -13,7 +13,7 @@ RuleTester.setDefaultConfig({
 
 const ruleTester = new RuleTester();
 
-const MESSAGE = 'Controllers must be called with a root context of `data`';
+const MESSAGE = 'Controllers must be called with a root context of `data` (`response.render("index", { data: { foo } })`)';
 const filename = '/src/controllers/myController.js';
 
 ruleTester.run('controller-context', Rule, {
@@ -49,6 +49,28 @@ ruleTester.run('controller-context', Rule, {
 
 				module.exports = async function MyController(request, response) {
 					return response.render('index', { foo });
+				}
+			`,
+			errors: [
+				{
+					message: MESSAGE,
+					type: 'ObjectExpression',
+				},
+			],
+			filename,
+		},
+		{
+			code: `
+				const path = require('path');
+				const foo = 'bar';
+
+				module.exports = async function MyController(request, response) {
+					return response.render('report', {
+						...request.body,
+						sectionType: 'report',
+						pageTitle: 'Report a Concern',
+						message: 'Thank you for reporting your concern with us. We take these reports extremely seriously.',
+					});
 				}
 			`,
 			errors: [

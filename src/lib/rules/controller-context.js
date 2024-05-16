@@ -14,7 +14,7 @@ module.exports = {
 		},
 		schema: [], // no options
 		messages: {
-			contextError: 'Controllers must be called with a root context of `data`'
+			contextError: 'Controllers must be called with a root context of `data` (`response.render("index", { data: { foo } })`)'
 		}
 	},
 	create: function (context) {
@@ -29,7 +29,7 @@ module.exports = {
 					if (args.length === 2 && args[1].type === 'ObjectExpression') {
 						const secondArg = args[1];
 						const hasDataProperty = secondArg.properties.some(
-							property => property.key.name === 'data'
+							property => property.key?.name === 'data'
 						);
 						if (!hasDataProperty) {
 							context.report({
