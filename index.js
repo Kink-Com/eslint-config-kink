@@ -633,7 +633,7 @@ module.exports = {
 			},
 		},
 		{
-			files: ['src/presenters/**/*.js'],
+			files: ['src/presenters/**/*.js', 'src/middleware/**/*.js', 'src/utils/**/*.js'],
 			rules: {
 				'import/prefer-default-export': 'error'
 			},
