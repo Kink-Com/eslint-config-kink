@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kink",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "eslint": "^8.10.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "8.x",
+    "eslint-config-prettier": "8.5.x",
     "eslint-plugin-compat": "^4.2.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.2.5",
