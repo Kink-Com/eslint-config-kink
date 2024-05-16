@@ -124,9 +124,6 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-types
 		"jsdoc/check-types": 1,
 
-		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-newline-after-description
-		"jsdoc/newline-after-description": 1,
-
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description-complete-sentence
 		// Requires that block description and tag description are written in complete sentences.
 		// Turning off for now, there's a large amount of the codebase that does not adhere to this standard.

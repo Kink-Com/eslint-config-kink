@@ -1,3 +1,13 @@
 {
-  "extends": "./index.js"
+  "extends": "./index.js",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false
+  },
+  "root": true,
+  "rules": {
+    "you-dont-need-lodash-underscore/omit": "off",
+    "you-dont-need-lodash-underscore/get": "off",
+    "node/no-missing-require": "off"
+  }
 }

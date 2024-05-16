@@ -1,5 +1,5 @@
 const { RuleTester } = require('eslint');
-const Rule = require('#rules/controller-context');
+const Rule = require('eslint-plugin-kink/lib/rules/controllerContext');
 
 const PARSER_BABEL = require.resolve('@babel/eslint-parser');
 
