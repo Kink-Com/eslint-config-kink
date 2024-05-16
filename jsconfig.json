@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "#rules/*": ["./src/lib/rules/*.js"],
+      "#test/*": ["test/*.js"]
+    }
+  },
+  "include": ["src/**/*"]
+}

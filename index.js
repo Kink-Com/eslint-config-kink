@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
 	extends: [
 		"plugin:node/recommended",
@@ -11,6 +13,8 @@ module.exports = {
 		"security",
 		"unicorn",
 		"you-dont-need-lodash-underscore",
+		"import",
+		"kink",
 	],
 	env: {
 		browser: false,
@@ -617,7 +621,27 @@ module.exports = {
 		"you-dont-need-lodash-underscore/get": "off",
 		"you-dont-need-lodash-underscore/omit": "off",
 		"you-dont-need-lodash-underscore/uniq": "off",
+
+		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
+		"import/prefer-default-export": "off",
+		'kink/controller-exports': 'off',
+		'kink/controller-context': 'off',
 	},
+	overrides: [
+		{
+			files: ['src/controllers/**/*.js'],
+			rules: {
+				'kink/controller-exports': 'error',
+				'kink/controller-context': 'error',
+			},
+		},
+		{
+			files: ['src/presenters/**/*.js'],
+			rules: {
+				'import/prefer-default-export': 'error'
+			},
+		},
+	],
 	settings: {
 		jsdoc: {
 			tagNamePreference: {

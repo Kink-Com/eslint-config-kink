@@ -1,0 +1,6 @@
+{
+  "reporter": "dot",
+  "ui": "bdd",
+  "recursive": true,
+  "timeout": 10000
+}
