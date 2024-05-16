@@ -29,7 +29,7 @@ module.exports = {
 					if (args.length === 2 && args[1].type === 'ObjectExpression') {
 						const secondArg = args[1];
 						const hasDataProperty = secondArg.properties.some(
-							property => property.key?.name === 'data'
+							property => property.key && property.key.name === 'data'
 						);
 						if (!hasDataProperty) {
 							context.report({
