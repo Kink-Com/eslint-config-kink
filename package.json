@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kink",
-  "version": "2.5.1",
+  "version": "3.0.0",
   "description": "Kink.com ESLint standards",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "eslint": "^8.10.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "8.x",
     "eslint-plugin-compat": "^4.2.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.2.5",
@@ -23,7 +23,7 @@
     "eslint-plugin-kink": "file:src",
     "eslint-plugin-mocha": "^6.3.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-prettier": "4.x",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.28.2",
     "eslint-plugin-react-hooks": "^4.3.0",
