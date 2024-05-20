@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
 	extends: [
 		"plugin:node/recommended",
@@ -11,6 +13,8 @@ module.exports = {
 		"security",
 		"unicorn",
 		"you-dont-need-lodash-underscore",
+		"import",
+		"kink",
 	],
 	env: {
 		browser: false,
@@ -119,9 +123,6 @@ module.exports = {
 
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-types
 		"jsdoc/check-types": 1,
-
-		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-newline-after-description
-		"jsdoc/newline-after-description": 1,
 
 		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description-complete-sentence
 		// Requires that block description and tag description are written in complete sentences.
@@ -617,7 +618,27 @@ module.exports = {
 		"you-dont-need-lodash-underscore/get": "off",
 		"you-dont-need-lodash-underscore/omit": "off",
 		"you-dont-need-lodash-underscore/uniq": "off",
+
+		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
+		"import/prefer-default-export": "off",
+		'kink/controller-exports': 'off',
+		'kink/controller-context': 'off',
 	},
+	overrides: [
+		{
+			files: ['src/controllers/**/*.js'],
+			rules: {
+				'kink/controller-exports': 'error',
+				'kink/controller-context': 'error',
+			},
+		},
+		{
+			files: ['src/presenters/**/*.js', 'src/middleware/**/*.js', 'src/utils/**/*.js'],
+			rules: {
+				'import/prefer-default-export': 'error'
+			},
+		},
+	],
 	settings: {
 		jsdoc: {
 			tagNamePreference: {
