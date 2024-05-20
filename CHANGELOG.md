@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## 3.0.0-3.0.2 - 2024.05.20
+
+- Upgraded eslint
+- Created custom rules for our Controllers
+- Wrote tests against Controller expectations
+
 ## v2.6.0 - 2021.03.25
 
 - Added react.js file
